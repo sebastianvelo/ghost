@@ -39,11 +39,14 @@ export const OrderTransformer = (suffix: string) => {
     if (suffix === "none") return "0";
     return suffix;
 }
+
+export const GridGapTransformer = (suffix: string) => isNaN(+suffix) ? suffix : `${suffix}px`;
+
 const FlexAndGridUtilities: Utilities = {
     ...OneActionUtility(GhostPrefix.ORDER, PropertyCSS.ORDER, OrderTransformer),
-    ...OneActionUtility(GhostPrefix.GAP, PropertyCSS.GAP),
-    ...OneActionUtility(GhostPrefix.COLUMN_GAP, PropertyCSS.COLUMN_GAP),
-    ...OneActionUtility(GhostPrefix.ROW_GAP, PropertyCSS.ROW_GAP),
+    ...OneActionUtility(GhostPrefix.GAP, PropertyCSS.GAP, GridGapTransformer),
+    ...OneActionUtility(GhostPrefix.COLUMN_GAP, PropertyCSS.COLUMN_GAP, GridGapTransformer),
+    ...OneActionUtility(GhostPrefix.ROW_GAP, PropertyCSS.ROW_GAP, GridGapTransformer),
     ...OneActionUtility(GhostPrefix.JUSTIFY_CONTENT, PropertyCSS.JUSTIFY_CONTENT, ContentTransformer),
     ...OneActionUtility(GhostPrefix.JUSTIFY_ITEMS, PropertyCSS.JUSTIFY_ITEMS),
     ...OneActionUtility(GhostPrefix.JUSTIFY_SELF, PropertyCSS.JUSTIFY_SELF),

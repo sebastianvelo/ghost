@@ -20,7 +20,7 @@ export interface RowProps {
 }
 const Column = (column: string, span = 1) => `<p class="px_26 line-h_2 col-span_${span}">${column}</p>`;
 
-const suffixIntegerValues = ["number", "numberUnit", "percentage", "divisor-dividend", "r-g-b", "r-g-b-a", "thickness"];
+const suffixIntegerValues = ["number", "numberUnit", "percentage", "divisor-dividend", "r", "g", "b", "a", "thickness"];
 const valueIntegerValues = ["px", "rem", "em", "%"];
 const suffixIsItInteger = (suffix: string) => suffixIntegerValues.includes(suffix);
 const valueIsItInteger = (value: string) => !isNaN(+value) || valueIntegerValues.some(v => value.includes(v));
@@ -57,14 +57,14 @@ const rowColor = {
 
 const Row = (props: RowProps, idx: number) => `
     <details>
-        <summary class="d_grid align-items_center cols_6 px_12 ${rowColor[`${idx % 2 === 0}`]}  bg_0-0-105-50:hover" >
+        <summary class="d_grid align-items_center cols_6 px_12 ${rowColor[`${idx % 2 === 0}`]} ${props.body ? "bg_0-0-105-50:hover" : ""}" >
             ${Column(Properties(props.header.cssProperties))}
             ${Column(Prefix(props.header.prefix))}
             ${Column(Suffixes(props.header.possibleSuffixes), 2)}
             ${Column(Example(props.header), 2)}
         </summary>
         ${props.body ? `
-            <div class="p_12 bg_255-255-255-50 max-h_600">
+            <div class="p_12 bg_255-255-255-50">
                 ${props.body}
             </div>
         ` : ""}

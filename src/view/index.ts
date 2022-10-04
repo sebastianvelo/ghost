@@ -1,5 +1,5 @@
 import Table from "./components/table/Table";
-import TableData from "./data/TableData";
+import TableData from "./data/cheasheet/TableData";
 
 const table = Table(TableData);
 

@@ -3,12 +3,13 @@ import GhostPrefix from "../../../property/GhostPrefix";
 import PropertyCSS from "../../../property/PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneActionUtility from "../../common/OneActionUtility";
+import ColorTransformer from "../../common/transformers/color/ColorTransformer";
 
 export const BorderRadiusTransformer = (suffix: string) => `${suffix}%`;
 
-export const BorderTransformer  = (suffix: string) => {
+export const BorderTransformer = (suffix: string) => {
     const [width, color = "black", style = "solid"] = suffix.split(SuffixSeparator);
-    return `${width ?? 1}px ${style} ${color}`;
+    return `${width ?? 1}px ${style} ${ColorTransformer(color)}`;
 };
 
 const BorderUtilities: Utilities = {

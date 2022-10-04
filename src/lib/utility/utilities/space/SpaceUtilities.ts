@@ -4,11 +4,11 @@ import Utilities from "../../common/IUtilities";
 
 const SpaceUtilities: Utilities = {
     [GhostPrefix.SPACE_X]: {
-        declarations: [{ property: PropertyCSS.MARGIN_RIGHT }, { property: PropertyCSS.MARGIN_LEFT }],
+        declarations: [{ property: PropertyCSS.MARGIN_LEFT }],
         selector: (className: string) => `${className} > * + *`
     },
     [GhostPrefix.SPACE_Y]: {
-        declarations: [{ property: PropertyCSS.MARGIN_TOP }, { property: PropertyCSS.MARGIN_BOTTOM }],
+        declarations: [{ property: PropertyCSS.MARGIN_TOP },],
         selector: (className: string) => `${className} > * + *`
     },
 };
