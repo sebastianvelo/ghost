@@ -31,7 +31,7 @@ const FontFamily: RowProps = {
         possibleSuffixes: ["fontName"],
         example: { suffix: `verdana`, transformer: ReplaceSeparatorWithSpaceTransformer }
     },
-    body: TextBodyExample(["font_verdana", "font_georgia", "font_courier-new", "font_arial"])
+    body: TextBodyExample(["font_verdana", "font_georgia", "font_courier-new", "font_arial", "font_sofia", "font_times-new-roman"])
 };
 
 const FontSize: RowProps = {

@@ -11,7 +11,7 @@ import SizingContainer from "./containers/SizingContainer";
 import SpaceBetweenContainer from "./containers/SpaceBetweenContainer";
 import TypographyContainer from "./containers/TypographyContainer";
 
-const TableBodyData: TableBodyProps = {
+const CheatsheetBodyData: TableBodyProps = {
     containers: [
         TypographyContainer,
         BackgroundContainer,
@@ -27,4 +27,4 @@ const TableBodyData: TableBodyProps = {
     ]
 };
 
-export default TableBodyData;
+export default CheatsheetBodyData;

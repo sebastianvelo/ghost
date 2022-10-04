@@ -64,7 +64,7 @@ const Row = (props: RowProps, idx: number) => `
             ${Column(Example(props.header), 2)}
         </summary>
         ${props.body ? `
-            <div class="p_12 bg_255-255-255-50">
+            <div class="p_12 bg_255-255-255-75">
                 ${props.body}
             </div>
         ` : ""}

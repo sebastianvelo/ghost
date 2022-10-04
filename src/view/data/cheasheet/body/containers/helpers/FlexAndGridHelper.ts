@@ -2,9 +2,10 @@ import GhostPrefix from "../../../../../../lib/property/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/property/PropertyCSS";
 import ClassNameTransformer from "../../../../../../lib/utility/common/transformers/ClassNameTransformer";
 import { RowProps } from "../../../../../components/row/Row";
-import AlignmentContainerBodyExample from "../example/AlignmentContainerBodyExample";
+import AlignmentContentBodyExample from "../example/AlignmentContentBodyExample";
+import AlignmentSelfBodyExample from "../example/AlignmentSelfBodyExample";
 import GridTemplateBodyExample from "../example/GridTemplateBodyExample";
-import PlaceContainerBodyExample from "../example/PlaceContainerBodyExample";
+import AlignmentItemsBodyExample from "../example/AlignmentItemsBodyExample";
 import UtilityIntegerUnitSuffix from "./UtilityIntegerUnitSuffix";
 
 interface AlignmentContainerProps {
@@ -14,24 +15,34 @@ interface AlignmentContainerProps {
     transformer?: ClassNameTransformer;
 }
 
-export const GenericAlignmentContainer = (props: AlignmentContainerProps): RowProps => ({
+export const GenericAlignmentContentContainer = (props: AlignmentContainerProps): RowProps => ({
     header: {
         cssProperties: [props.property],
         prefix: props.prefix,
         possibleSuffixes: props.suffixes,
         example: { suffix: props.suffixes[0], transformer: props.transformer }
     },
-    body: AlignmentContainerBodyExample(props.suffixes.map(suffix => [`${props.prefix}_${suffix}`, 3]))
+    body: AlignmentContentBodyExample(props.suffixes.map(suffix => [`${props.prefix}_${suffix}`, 3]))
 });
 
-export const GenericPlaceContainer = (props: AlignmentContainerProps): RowProps => ({
+export const GenericAlignmentSelfContainer = (props: AlignmentContainerProps): RowProps => ({
     header: {
         cssProperties: [props.property],
         prefix: props.prefix,
         possibleSuffixes: props.suffixes,
         example: { suffix: props.suffixes[0], transformer: props.transformer }
     },
-    body: PlaceContainerBodyExample(props.suffixes.map(suffix => [`${props.prefix}_${suffix}`, 3]))
+    body: AlignmentSelfBodyExample(props.suffixes.map(suffix => `${props.prefix}_${suffix}`))
+});
+
+export const GenericAlignmentItemsContainer = (props: AlignmentContainerProps): RowProps => ({
+    header: {
+        cssProperties: [props.property],
+        prefix: props.prefix,
+        possibleSuffixes: props.suffixes,
+        example: { suffix: props.suffixes[0], transformer: props.transformer }
+    },
+    body: AlignmentItemsBodyExample(props.suffixes.map(suffix => [`${props.prefix}_${suffix}`, 3]))
 });
 
 export const GenericGapContainer = (property: PropertyCSS, prefix: GhostPrefix) => ({

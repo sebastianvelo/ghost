@@ -1,10 +1,10 @@
 import { TableProps } from "../../components/table/Table";
-import TableBodyData from "./body/TableBodyData";
-import TableHeaderData from "./header/TableHeaderData";
+import CheatsheetBodyData from "./body/CheatsheetBodyData";
+import CheatsheetHeaderData from "./header/CheatsheetHeaderData";
 
-const TableData: TableProps = {
-    header: TableHeaderData,
-    body: TableBodyData
+const CheatsheetData: TableProps = {
+    header: CheatsheetHeaderData,
+    body: CheatsheetBodyData
 };
 
-export default TableData;
+export default CheatsheetData;

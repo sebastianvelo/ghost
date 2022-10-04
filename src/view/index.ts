@@ -1,12 +1,9 @@
-import Table from "./components/table/Table";
-import TableData from "./data/cheasheet/TableData";
-
-const table = Table(TableData);
+import getPageFromLocation from "./components/pages/Pages";
 
 const Main = document.querySelector("#main");
 
 const render = () => {
-    Main!.innerHTML = table;
+    Main!.innerHTML = getPageFromLocation();
 }
 
 export default render;

@@ -1,6 +1,6 @@
 import { TableHeaderProps } from "../../../components/table/header/TableHeader";
 
-const TableHeaderData: TableHeaderProps = {
+const CheatsheetHeaderData: TableHeaderProps = {
     columns: [
         "CSS Properties",
         "Prefix",
@@ -9,4 +9,4 @@ const TableHeaderData: TableHeaderProps = {
     ]
 };
 
-export default TableHeaderData;
+export default CheatsheetHeaderData;

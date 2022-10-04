@@ -2,10 +2,10 @@ import GenericClassNameExample from "./GenericClassNameExample";
 
 const ClassNameExample = (className: string) =>
     GenericClassNameExample(className, `
-        <div class="bg_0-0-0-75 d_flex ${className}">
-            <div class="w_50 h_50 bg_75-0-130"></div>
-            <div class="w_50 h_50 bg_75-0-150"></div>
-            <div class="w_50 h_50 bg_75-0-170"></div>
+        <div class="d_flex bg_primary ${className}">
+            <div class="w_50 h_50 bg_0-255-255-100"></div>
+            <div class="w_50 h_50 bg_0-255-255-80"></div>
+            <div class="w_50 h_50 bg_0-255-255-60"></div>
         </div>
     `);
 
