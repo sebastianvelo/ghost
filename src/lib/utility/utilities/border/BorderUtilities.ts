@@ -2,7 +2,7 @@ import { SuffixSeparator } from "../../../common/types";
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneActionUtility from "../../common/OneActionUtility";
+import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 import ColorTransformer from "../../common/transformers/color/ColorTransformer";
 
 export const BorderRadiusTransformer = (suffix: string) => `${suffix}%`;
@@ -13,11 +13,11 @@ export const BorderTransformer = (suffix: string) => {
 };
 
 const BorderUtilities: Utilities = {
-    ...OneActionUtility(GhostPrefix.BORDER, PropertyCSS.BORDER, BorderTransformer),
-    ...OneActionUtility(GhostPrefix.BORDER_BOTTOM, PropertyCSS.BORDER_BOTTOM, BorderTransformer),
-    ...OneActionUtility(GhostPrefix.BORDER_TOP, PropertyCSS.BORDER_TOP, BorderTransformer),
-    ...OneActionUtility(GhostPrefix.BORDER_RIGHT, PropertyCSS.BORDER_RIGHT, BorderTransformer),
-    ...OneActionUtility(GhostPrefix.BORDER_LEFT, PropertyCSS.BORDER_LEFT, BorderTransformer),
+    ...OneDeclarationUtility(GhostPrefix.BORDER, PropertyCSS.BORDER, BorderTransformer),
+    ...OneDeclarationUtility(GhostPrefix.BORDER_BOTTOM, PropertyCSS.BORDER_BOTTOM, BorderTransformer),
+    ...OneDeclarationUtility(GhostPrefix.BORDER_TOP, PropertyCSS.BORDER_TOP, BorderTransformer),
+    ...OneDeclarationUtility(GhostPrefix.BORDER_RIGHT, PropertyCSS.BORDER_RIGHT, BorderTransformer),
+    ...OneDeclarationUtility(GhostPrefix.BORDER_LEFT, PropertyCSS.BORDER_LEFT, BorderTransformer),
     [GhostPrefix.BORDER_X]: {
         declarations: [
             { property: PropertyCSS.BORDER_LEFT, transformer: BorderTransformer },
@@ -30,7 +30,7 @@ const BorderUtilities: Utilities = {
             { property: PropertyCSS.BORDER_BOTTOM, transformer: BorderTransformer }
         ],
     },
-    ...OneActionUtility(GhostPrefix.BORDER_RADIUS, PropertyCSS.BORDER_RADIUS),
+    ...OneDeclarationUtility(GhostPrefix.BORDER_RADIUS, PropertyCSS.BORDER_RADIUS),
 };
 
 export default BorderUtilities;

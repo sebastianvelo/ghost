@@ -2,7 +2,7 @@ import { SuffixSeparator } from "../../../common/types";
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneActionUtility from "../../common/OneActionUtility";
+import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 
 export const TransitionPropertyMap: any = {
     all: "all",
@@ -31,11 +31,11 @@ export const TransitionTimingFunctionTransformer = (suffix: string) => Transitio
 export const TransitionMsTransformer = (suffix: string) => `${suffix}ms`;
 
 const TransitionUtilities: Utilities = {
-    ...OneActionUtility(GhostPrefix.TRANSITION, PropertyCSS.TRANSITION, TransitionTransformer),
-    ...OneActionUtility(GhostPrefix.TRANSITION_PROPERTY, PropertyCSS.TRANSITION_PROPERTY, TransitionPropertyTransformer),
-    ...OneActionUtility(GhostPrefix.TRANSITION_DELAY, PropertyCSS.TRANSITION_DELAY, TransitionMsTransformer),
-    ...OneActionUtility(GhostPrefix.TRANSITION_DURATION, PropertyCSS.TRANSITION_DURATION, TransitionMsTransformer),
-    ...OneActionUtility(GhostPrefix.TRANSITION_TIMING_FUNCTION, PropertyCSS.TRANSITION_TIMING_FUNCTION, TransitionTimingFunctionTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TRANSITION, PropertyCSS.TRANSITION, TransitionTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TRANSITION_PROPERTY, PropertyCSS.TRANSITION_PROPERTY, TransitionPropertyTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TRANSITION_DELAY, PropertyCSS.TRANSITION_DELAY, TransitionMsTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TRANSITION_DURATION, PropertyCSS.TRANSITION_DURATION, TransitionMsTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TRANSITION_TIMING_FUNCTION, PropertyCSS.TRANSITION_TIMING_FUNCTION, TransitionTimingFunctionTransformer),
 };
 
 export default TransitionUtilities;

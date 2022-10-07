@@ -1,15 +1,15 @@
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneActionUtility from "../../common/OneActionUtility";
+import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 
 const SizingUtilities: Utilities = {
-    ...OneActionUtility(GhostPrefix.WIDTH, PropertyCSS.WIDTH),
-    ...OneActionUtility(GhostPrefix.HEIGHT, PropertyCSS.HEIGHT),
-    ...OneActionUtility(GhostPrefix.MIN_WIDTH, PropertyCSS.MIN_WIDTH),
-    ...OneActionUtility(GhostPrefix.MIN_HEIGHT, PropertyCSS.MIN_HEIGHT),
-    ...OneActionUtility(GhostPrefix.MAX_WIDTH, PropertyCSS.MAX_WIDTH),
-    ...OneActionUtility(GhostPrefix.MAX_HEIGHT, PropertyCSS.MAX_HEIGHT),
+    ...OneDeclarationUtility(GhostPrefix.WIDTH, PropertyCSS.WIDTH),
+    ...OneDeclarationUtility(GhostPrefix.HEIGHT, PropertyCSS.HEIGHT),
+    ...OneDeclarationUtility(GhostPrefix.MIN_WIDTH, PropertyCSS.MIN_WIDTH),
+    ...OneDeclarationUtility(GhostPrefix.MIN_HEIGHT, PropertyCSS.MIN_HEIGHT),
+    ...OneDeclarationUtility(GhostPrefix.MAX_WIDTH, PropertyCSS.MAX_WIDTH),
+    ...OneDeclarationUtility(GhostPrefix.MAX_HEIGHT, PropertyCSS.MAX_HEIGHT),
 };
 
 export default SizingUtilities;

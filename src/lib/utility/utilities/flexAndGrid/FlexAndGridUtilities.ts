@@ -1,7 +1,7 @@
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneActionUtility from "../../common/OneActionUtility";
+import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 
 const ContentMap: any = {
     start: "flex-start",
@@ -43,19 +43,19 @@ export const OrderTransformer = (suffix: string) => {
 export const GridGapTransformer = (suffix: string) => isNaN(+suffix) ? suffix : `${suffix}px`;
 
 const FlexAndGridUtilities: Utilities = {
-    ...OneActionUtility(GhostPrefix.ORDER, PropertyCSS.ORDER, OrderTransformer),
-    ...OneActionUtility(GhostPrefix.GAP, PropertyCSS.GAP, GridGapTransformer),
-    ...OneActionUtility(GhostPrefix.COLUMN_GAP, PropertyCSS.COLUMN_GAP, GridGapTransformer),
-    ...OneActionUtility(GhostPrefix.ROW_GAP, PropertyCSS.ROW_GAP, GridGapTransformer),
-    ...OneActionUtility(GhostPrefix.JUSTIFY_CONTENT, PropertyCSS.JUSTIFY_CONTENT, ContentTransformer),
-    ...OneActionUtility(GhostPrefix.JUSTIFY_ITEMS, PropertyCSS.JUSTIFY_ITEMS),
-    ...OneActionUtility(GhostPrefix.JUSTIFY_SELF, PropertyCSS.JUSTIFY_SELF),
-    ...OneActionUtility(GhostPrefix.ALIGN_CONTENT, PropertyCSS.ALIGN_CONTENT, ContentTransformer),
-    ...OneActionUtility(GhostPrefix.ALIGN_ITEMS, PropertyCSS.ALIGN_ITEMS, AlignItemsTransformer),
-    ...OneActionUtility(GhostPrefix.ALIGN_SELF, PropertyCSS.ALIGN_SELF, AlignSelfTransformer),
-    ...OneActionUtility(GhostPrefix.PLACE_CONTENT, PropertyCSS.PLACE_CONTENT, ContentTransformer),
-    ...OneActionUtility(GhostPrefix.PLACE_ITEMS, PropertyCSS.PLACE_ITEMS),
-    ...OneActionUtility(GhostPrefix.PLACE_SELF, PropertyCSS.PLACE_SELF),
+    ...OneDeclarationUtility(GhostPrefix.ORDER, PropertyCSS.ORDER, OrderTransformer),
+    ...OneDeclarationUtility(GhostPrefix.GAP, PropertyCSS.GAP, GridGapTransformer),
+    ...OneDeclarationUtility(GhostPrefix.COLUMN_GAP, PropertyCSS.COLUMN_GAP, GridGapTransformer),
+    ...OneDeclarationUtility(GhostPrefix.ROW_GAP, PropertyCSS.ROW_GAP, GridGapTransformer),
+    ...OneDeclarationUtility(GhostPrefix.JUSTIFY_CONTENT, PropertyCSS.JUSTIFY_CONTENT, ContentTransformer),
+    ...OneDeclarationUtility(GhostPrefix.JUSTIFY_ITEMS, PropertyCSS.JUSTIFY_ITEMS),
+    ...OneDeclarationUtility(GhostPrefix.JUSTIFY_SELF, PropertyCSS.JUSTIFY_SELF),
+    ...OneDeclarationUtility(GhostPrefix.ALIGN_CONTENT, PropertyCSS.ALIGN_CONTENT, ContentTransformer),
+    ...OneDeclarationUtility(GhostPrefix.ALIGN_ITEMS, PropertyCSS.ALIGN_ITEMS, AlignItemsTransformer),
+    ...OneDeclarationUtility(GhostPrefix.ALIGN_SELF, PropertyCSS.ALIGN_SELF, AlignSelfTransformer),
+    ...OneDeclarationUtility(GhostPrefix.PLACE_CONTENT, PropertyCSS.PLACE_CONTENT, ContentTransformer),
+    ...OneDeclarationUtility(GhostPrefix.PLACE_ITEMS, PropertyCSS.PLACE_ITEMS),
+    ...OneDeclarationUtility(GhostPrefix.PLACE_SELF, PropertyCSS.PLACE_SELF),
 };
 
 export default FlexAndGridUtilities;

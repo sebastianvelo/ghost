@@ -2,7 +2,7 @@ import { PropertySeparator, SuffixSeparator } from "../../../common/types";
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneActionUtility from "../../common/OneActionUtility";
+import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 import ColorTransformer from "../../common/transformers/color/ColorTransformer";
 import ReplaceSeparatorWithSpaceTransformer from "../../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 
@@ -43,24 +43,24 @@ export const TextShadowTransformer = (suffix: string) => {
 };
 
 const TypographyUtilities: Utilities = {
-    ...OneActionUtility(GhostPrefix.COLOR, PropertyCSS.COLOR, ColorTransformer),
-    ...OneActionUtility(GhostPrefix.FONT_WEIGHT, PropertyCSS.FONT_WEIGHT),
-    ...OneActionUtility(GhostPrefix.FONT_SIZE, PropertyCSS.FONT_SIZE),
-    ...OneActionUtility(GhostPrefix.FONT_FAMILY, PropertyCSS.FONT_FAMILY, ReplaceSeparatorWithSpaceTransformer),
-    ...OneActionUtility(GhostPrefix.TEXT_ALIGN, PropertyCSS.TEXT_ALIGN),
-    ...OneActionUtility(GhostPrefix.LETTER_SPACING, PropertyCSS.LETTER_SPACING, LetterSpacingTransformer),
-    ...OneActionUtility(GhostPrefix.LINE_HEIGHT, PropertyCSS.LINE_HEIGHT, LineHeightTransformer),
-    ...OneActionUtility(GhostPrefix.LIST_STYLE_TYPE, PropertyCSS.LIST_STYLE_TYPE),
-    ...OneActionUtility(GhostPrefix.FONT_STYLE, PropertyCSS.FONT_STYLE),
-    ...OneActionUtility(GhostPrefix.FONT_VARIANT, PropertyCSS.FONT_VARIANT),
-    ...OneActionUtility(GhostPrefix.FONT_VARIANT_CAPS, PropertyCSS.FONT_VARIANT_CAPS),
-    ...OneActionUtility(GhostPrefix.TEXT_DECORATION, PropertyCSS.TEXT_DECORATION, TextDecorationTransformer),
-    ...OneActionUtility(GhostPrefix.TEXT_DECORATION_LINE, PropertyCSS.TEXT_DECORATION_LINE),
-    ...OneActionUtility(GhostPrefix.TEXT_DECORATION_STYLE, PropertyCSS.TEXT_DECORATION_STYLE),
-    ...OneActionUtility(GhostPrefix.TEXT_DECORATION_THICKNESS, PropertyCSS.TEXT_DECORATION_THICKNESS, TextDecorationThicknessTransformer),
-    ...OneActionUtility(GhostPrefix.TEXT_DECORATION_COLOR, PropertyCSS.TEXT_DECORATION_COLOR, ColorTransformer),
-    ...OneActionUtility(GhostPrefix.TEXT_OVERFLOW, PropertyCSS.TEXT_OVERFLOW),
-    ...OneActionUtility(GhostPrefix.TEXT_SHADOW, PropertyCSS.TEXT_SHADOW, TextShadowTransformer),
+    ...OneDeclarationUtility(GhostPrefix.COLOR, PropertyCSS.COLOR, ColorTransformer),
+    ...OneDeclarationUtility(GhostPrefix.FONT_WEIGHT, PropertyCSS.FONT_WEIGHT),
+    ...OneDeclarationUtility(GhostPrefix.FONT_SIZE, PropertyCSS.FONT_SIZE),
+    ...OneDeclarationUtility(GhostPrefix.FONT_FAMILY, PropertyCSS.FONT_FAMILY, ReplaceSeparatorWithSpaceTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_ALIGN, PropertyCSS.TEXT_ALIGN),
+    ...OneDeclarationUtility(GhostPrefix.LETTER_SPACING, PropertyCSS.LETTER_SPACING, LetterSpacingTransformer),
+    ...OneDeclarationUtility(GhostPrefix.LINE_HEIGHT, PropertyCSS.LINE_HEIGHT, LineHeightTransformer),
+    ...OneDeclarationUtility(GhostPrefix.LIST_STYLE_TYPE, PropertyCSS.LIST_STYLE_TYPE),
+    ...OneDeclarationUtility(GhostPrefix.FONT_STYLE, PropertyCSS.FONT_STYLE),
+    ...OneDeclarationUtility(GhostPrefix.FONT_VARIANT, PropertyCSS.FONT_VARIANT),
+    ...OneDeclarationUtility(GhostPrefix.FONT_VARIANT_CAPS, PropertyCSS.FONT_VARIANT_CAPS),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_DECORATION, PropertyCSS.TEXT_DECORATION, TextDecorationTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_DECORATION_LINE, PropertyCSS.TEXT_DECORATION_LINE),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_DECORATION_STYLE, PropertyCSS.TEXT_DECORATION_STYLE),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_DECORATION_THICKNESS, PropertyCSS.TEXT_DECORATION_THICKNESS, TextDecorationThicknessTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_DECORATION_COLOR, PropertyCSS.TEXT_DECORATION_COLOR, ColorTransformer),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_OVERFLOW, PropertyCSS.TEXT_OVERFLOW),
+    ...OneDeclarationUtility(GhostPrefix.TEXT_SHADOW, PropertyCSS.TEXT_SHADOW, TextShadowTransformer),
 };
 
 export default TypographyUtilities;

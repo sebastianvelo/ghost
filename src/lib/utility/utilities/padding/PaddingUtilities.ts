@@ -1,14 +1,14 @@
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneActionUtility from "../../common/OneActionUtility";
+import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 
 const PaddingUtilities: Utilities = {
-    ...OneActionUtility(GhostPrefix.PADDING, PropertyCSS.PADDING),
-    ...OneActionUtility(GhostPrefix.PADDING_RIGHT, PropertyCSS.PADDING_RIGHT),
-    ...OneActionUtility(GhostPrefix.PADDING_LEFT, PropertyCSS.PADDING_LEFT),
-    ...OneActionUtility(GhostPrefix.PADDING_BOTTOM, PropertyCSS.PADDING_BOTTOM),
-    ...OneActionUtility(GhostPrefix.PADDING_TOP, PropertyCSS.PADDING_TOP),
+    ...OneDeclarationUtility(GhostPrefix.PADDING, PropertyCSS.PADDING),
+    ...OneDeclarationUtility(GhostPrefix.PADDING_RIGHT, PropertyCSS.PADDING_RIGHT),
+    ...OneDeclarationUtility(GhostPrefix.PADDING_LEFT, PropertyCSS.PADDING_LEFT),
+    ...OneDeclarationUtility(GhostPrefix.PADDING_BOTTOM, PropertyCSS.PADDING_BOTTOM),
+    ...OneDeclarationUtility(GhostPrefix.PADDING_TOP, PropertyCSS.PADDING_TOP),
     [GhostPrefix.PADDING_X]: {
         declarations: [{ property: PropertyCSS.PADDING_RIGHT }, { property: PropertyCSS.PADDING_LEFT }]
     },
