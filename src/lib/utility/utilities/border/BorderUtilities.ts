@@ -1,16 +1,8 @@
-import { SuffixSeparator } from "../../../common/types";
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneDeclarationUtility from "../../common/OneDeclarationUtility";
-import ColorTransformer from "../../common/transformers/color/ColorTransformer";
-
-export const BorderRadiusTransformer = (suffix: string) => `${suffix}%`;
-
-export const BorderTransformer = (suffix: string) => {
-    const [width, color = "black", style = "solid"] = suffix.split(SuffixSeparator);
-    return `${width ?? 1}px ${style} ${ColorTransformer(color)}`;
-};
+import { BorderTransformer } from "./transformers";
 
 const BorderUtilities: Utilities = {
     ...OneDeclarationUtility(GhostPrefix.BORDER, PropertyCSS.BORDER, BorderTransformer),

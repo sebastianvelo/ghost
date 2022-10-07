@@ -1,6 +1,6 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { BorderTransformer } from "../../../../../../lib/utility/utilities/border/BorderUtilities";
+import { BorderTransformer } from "../../../../../../lib/utility/utilities/border/transformers";
 import { RowProps } from "../../../../../components/row/Row";
 import BorderBodyExample from "./BodyExample";
 
