@@ -1,4 +1,4 @@
-import PropertyCSS from "../../property/PropertyCSS";
+import PropertyCSS from "../PropertyCSS";
 import ClassNameTransformer from "./transformers/ClassNameTransformer";
 
 interface Declaration {

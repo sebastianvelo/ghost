@@ -1,4 +1,4 @@
-import GhostPrefix from "../../../property/GhostPrefix";
+import GhostPrefix from "../../../utility/GhostPrefix";
 import DisplaySuffix from "../../../suffix/layout/display/DisplaySuffix";
 import { GenericClassName } from "../../GhostClassName";
 

@@ -1,13 +1,13 @@
-import GhostPrefix from "../../../../../../lib/property/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/property/PropertyCSS";
+import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-import { BackgroundPositioningTransformer, BackgroundRepeatTransformer } from "../../../../../../lib/utility/utilities/background/BackgroundUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
 import GenericBodyExample from "../../common/body/GenericBodyExample";
 import UtilityColorSuffix from "../../common/helpers/UtilityColorSuffix";
 import { GenericBackground } from "./Helper";
 import { BackgroundAttachmentSuffixes, BackgroundBlendModeSuffixes, BackgroundPositioningSuffixes, BackgroundPositionSuffixes, BackgroundRepeatSuffixes } from "./Suffixes";
+import { BackgroundPositioningTransformer, BackgroundRepeatTransformer } from "../../../../../../lib/utility/utilities/background/transformers";
 
 const BackgroundColor: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.BG_COLOR, GhostPrefix.BG_COLOR, "200-10-102-50"),

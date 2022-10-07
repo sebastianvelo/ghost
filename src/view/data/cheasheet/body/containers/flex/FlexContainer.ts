@@ -1,5 +1,5 @@
-import GhostPrefix from "../../../../../../lib/property/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/property/PropertyCSS";
+import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import { FlexBasisTransformer, FlexDirectionTransformer } from "../../../../../../lib/utility/utilities/flex/FlexUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";

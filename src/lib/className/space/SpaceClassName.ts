@@ -1,4 +1,4 @@
-import GhostPrefix from "../../property/GhostPrefix";
+import GhostPrefix from "../../utility/GhostPrefix";
 import { GenericClassName } from "../GhostClassName";
 
 type SpaceXClassName = GenericClassName<GhostPrefix.SPACE_X, number>;

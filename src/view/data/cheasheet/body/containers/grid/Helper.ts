@@ -1,5 +1,5 @@
-import GhostPrefix from "../../../../../../lib/property/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/property/PropertyCSS";
+import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import { GridAutoTransformer } from "../../../../../../lib/utility/utilities/grid/GridUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { GridAutoSuffixes } from "./Suffixes";

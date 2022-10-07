@@ -1,5 +1,5 @@
-import GhostPrefix from "../../../../../../lib/property/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/property/PropertyCSS";
+import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import { TransitionMsTransformer, TransitionPropertyTransformer, TransitionTimingFunctionTransformer, TransitionTransformer } from "../../../../../../lib/utility/utilities/transition/TransitionUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";

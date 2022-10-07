@@ -1,17 +1,22 @@
 import GhostClassName from "./className/GhostClassName";
-import { getGhostClassNamesFromDocument } from "./common/classNames";
+import { getGhostClassNames } from "./common/classNames";
 import config from "./ghost.config";
 import GhostStyleSheet from "./GhostStyleSheet";
 
 const styleSheet = new GhostStyleSheet(config);
 
-const init = () => {
+const timerCalculator = () => {
     const startTime = performance.now();
+    return {
+        total: () => performance.now() - startTime
+    }
+}
 
-    const classes: GhostClassName[] = getGhostClassNamesFromDocument();
+const init = () => {
+    const timer = timerCalculator();
+    const classes: GhostClassName[] = getGhostClassNames(config.source);
+    const ms = timer.total();
 
-    const endTime = performance.now();
-    const ms = endTime - startTime;
     console.log(`Build ${classes.length} different classes `);
     console.log(`${ms} milliseconds`);
     console.log(`${ms / classes.length} milliseconds per class`);

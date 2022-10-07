@@ -1,5 +1,5 @@
-import GhostPrefix from "../../../property/GhostPrefix";
-import PropertyCSS from "../../../property/PropertyCSS";
+import GhostPrefix from "../../GhostPrefix";
+import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneActionUtility from "../../common/OneActionUtility";
 import ClassNameTransformer from "../../common/transformers/ClassNameTransformer";

@@ -1,4 +1,4 @@
-import GhostPrefix from "../../property/GhostPrefix";
+import GhostPrefix from "../../utility/GhostPrefix";
 import ColorSuffix from "../../suffix/common/color/ColorSuffix";
 import { GenericClassName } from "../GhostClassName";
 

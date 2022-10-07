@@ -15,7 +15,7 @@ class GhostStyleSheet {
   public element: HTMLStyleElement;
   public sheet: CSSStyleSheet;
 
-  constructor(config: GhostConfig = {}) {
+  constructor(config: GhostConfig) {
     initializeConfig(config);
     this.element = document.createElement("style");
     this.appendInHead();
@@ -56,7 +56,7 @@ class GhostStyleSheet {
   public addRuleFromClass(className: GhostClassName) {
     const utility = getUtility(className);
     if (!utility.declarations) {
-      console.log(`in ${className}: ${utility.prefix} not found`);
+      console.log(`In ${className}: ${utility.prefix} not found`);
       return;
     }
 
@@ -65,6 +65,7 @@ class GhostStyleSheet {
       this.addMediaRule(utility.selector, utility.declarations, min);
       return;
     }
+
     this.addRule(utility.selector, utility.declarations);
   }
 

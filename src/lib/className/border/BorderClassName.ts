@@ -1,4 +1,4 @@
-import GhostPrefix from "../../property/GhostPrefix";
+import GhostPrefix from "../../utility/GhostPrefix";
 import BorderSuffix from "../../suffix/border/BorderSuffix";
 import { GenericClassName } from "../GhostClassName";
 

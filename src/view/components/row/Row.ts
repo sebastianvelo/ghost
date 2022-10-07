@@ -1,6 +1,6 @@
 import { PropertySeparator, SuffixSeparator } from "../../../lib/common/types";
-import GhostPrefix from "../../../lib/property/GhostPrefix";
-import PropertyCSS from "../../../lib/property/PropertyCSS";
+import GhostPrefix from "../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../lib/utility/PropertyCSS";
 import ClassNameTransformer from "../../../lib/utility/common/transformers/ClassNameTransformer";
 
 export interface RowHeaderProps {

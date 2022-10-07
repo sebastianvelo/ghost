@@ -1,6 +1,6 @@
 import { SuffixSeparator } from "../../../common/types";
-import GhostPrefix from "../../../property/GhostPrefix";
-import PropertyCSS from "../../../property/PropertyCSS";
+import GhostPrefix from "../../GhostPrefix";
+import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneActionUtility from "../../common/OneActionUtility";
 import ColorTransformer from "../../common/transformers/color/ColorTransformer";

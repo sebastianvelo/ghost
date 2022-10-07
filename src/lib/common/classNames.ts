@@ -7,8 +7,11 @@ const filterInvalidClasses = (arr: string[]) => removeDuplicates(arr).filter(uti
 const getAllClassesFromDocument = () => Array.from(document.querySelectorAll("body, body *"));
 const flatClasses = (e: Element) => e.className.split(" ");
 
-export const getGhostClassNames = (classNames: string[]) =>
-    filterInvalidClasses(classNames).sort() as GhostClassName[];
+const getUniquesClassesFromDocument = (): string[] => getAllClassesFromDocument().flatMap(flatClasses);
 
-export const getGhostClassNamesFromDocument = () =>
-    getGhostClassNames(getAllClassesFromDocument().flatMap(flatClasses));
+const sources: any = {
+    "onload": getUniquesClassesFromDocument,
+};
+
+export const getGhostClassNames = (type: string) =>
+    filterInvalidClasses(sources[type] ? sources[type]() : []).sort() as GhostClassName[];

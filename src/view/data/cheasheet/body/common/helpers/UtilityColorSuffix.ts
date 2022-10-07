@@ -1,5 +1,5 @@
-import GhostPrefix from "../../../../../../lib/property/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/property/PropertyCSS";
+import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import ColorTransformer from "../../../../../../lib/utility/common/transformers/color/ColorTransformer";
 import { RowProps } from "../../../../../components/row/Row";
 

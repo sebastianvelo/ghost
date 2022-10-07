@@ -1,6 +1,7 @@
 import GhostConfig from "./GhostConfig";
 
 const config: GhostConfig = {
+    source: "onload",
     aliases: {
         colors: {
             primary: "FCCA46",
