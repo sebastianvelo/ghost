@@ -1,46 +1,10 @@
-import { PropertySeparator, SuffixSeparator } from "../../../common/types";
-import GhostPrefix from "../../GhostPrefix";
-import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 import ColorTransformer from "../../common/transformers/color/ColorTransformer";
 import ReplaceSeparatorWithSpaceTransformer from "../../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-
-export const LetterSpacingMap: any = {
-    tighter: "-0.05em",
-    tight: "-0.025em",
-    normal: "0em",
-    wide: "0.025em",
-    wider: "0.05em",
-    widest: "0.1em",
-};
-
-export const LineHeightMap: any = {
-    none: "1",
-    tight: "1.25",
-    snug: "1.375",
-    normal: "1.5",
-    relaxed: "1.625",
-    loose: "2"
-}
-
-const UnitPxTransformer = (suffix: string) => `${suffix}px`;
-
-export const LetterSpacingTransformer = (suffix: string) => LetterSpacingMap[suffix] ?? suffix;
-
-export const LineHeightTransformer = (suffix: string) => LineHeightMap[suffix] ?? suffix;
-
-export const TextDecorationThicknessTransformer = UnitPxTransformer;
-
-export const TextDecorationTransformer = (suffix: string) => {
-    const [line, color = "black", style = "solid", thickness = "1"] = suffix.split(SuffixSeparator);
-    return `${line} ${ColorTransformer(color)} ${style} ${TextDecorationThicknessTransformer(thickness)}`;
-};
-
-export const TextShadowTransformer = (suffix: string) => {
-    const [hShadow, vShadow, blurRadius = "0", color = "black"] = suffix.split(SuffixSeparator);
-    return `${UnitPxTransformer(hShadow)} ${UnitPxTransformer(vShadow)} ${UnitPxTransformer(blurRadius)} ${ColorTransformer(color)}`;
-};
+import GhostPrefix from "../../GhostPrefix";
+import PropertyCSS from "../../PropertyCSS";
+import { LetterSpacingTransformer, LineHeightTransformer, TextDecorationThicknessTransformer, TextDecorationTransformer, TextShadowTransformer } from "./transformers";
 
 const TypographyUtilities: Utilities = {
     ...OneDeclarationUtility(GhostPrefix.COLOR, PropertyCSS.COLOR, ColorTransformer),

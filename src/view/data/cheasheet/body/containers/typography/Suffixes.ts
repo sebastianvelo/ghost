@@ -1,4 +1,4 @@
-import { LetterSpacingMap, LineHeightMap } from "../../../../../../lib/utility/utilities/typography/TypographyUtilities";
+import { LetterSpacingMap, LineHeightMap } from "../../../../../../lib/utility/utilities/typography/suffixes";
 
 export const LetterSpacingSuffixes = Object.keys(LetterSpacingMap);
 export const LineHeightSuffixes = Object.keys(LineHeightMap);

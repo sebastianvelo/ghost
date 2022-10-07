@@ -1,14 +1,14 @@
+import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-import { LetterSpacingTransformer, LineHeightTransformer, TextShadowTransformer } from "../../../../../../lib/utility/utilities/typography/TypographyUtilities";
+import { LetterSpacingTransformer, LineHeightTransformer, TextShadowTransformer } from "../../../../../../lib/utility/utilities/typography/transformers";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
-import IntegerUnitDefaultPxTransformer from "../../common/IntegerUnitDefaultPxTransformer";
-import { FontStyleSuffixes, FontVariantCapsSuffixes, FontVariantSuffixes, FontWeightSuffixes, LetterSpacingSuffixes, LineHeightSuffixes, ListStyleTypeSuffixes, TextDecorationLineSuffixes, TextDecorationStyleSuffixes, TextOverflowSuffixes } from "./Suffixes";
 import UtilityColorSuffix from "../../common/helpers/UtilityColorSuffix";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
+import IntegerUnitDefaultPxTransformer from "../../common/IntegerUnitDefaultPxTransformer";
 import { TextBodyExample, TextDecorationBodyExample, TextOverflowBodyExample } from "./Helper";
+import { FontStyleSuffixes, FontVariantCapsSuffixes, FontVariantSuffixes, FontWeightSuffixes, LetterSpacingSuffixes, LineHeightSuffixes, ListStyleTypeSuffixes, TextDecorationLineSuffixes, TextDecorationStyleSuffixes, TextOverflowSuffixes } from "./Suffixes";
 
 const Color: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.COLOR, GhostPrefix.COLOR, "10af0a"),
@@ -160,14 +160,16 @@ const TextDecorationStyle: RowProps = {
 const TextDecorationThickness: RowProps = {
     ...UtilityIntegerUnitSuffix(PropertyCSS.TEXT_DECORATION_THICKNESS, GhostPrefix.TEXT_DECORATION_THICKNESS, 4),
     body: TextDecorationBodyExample(
-        ["1", "2", "4", "6"].map(suffix => `${GhostPrefix.TEXT_DECORATION_THICKNESS}_${suffix}`)
+        ["1", "2", "4", "6"]
+            .map(suffix => `${GhostPrefix.TEXT_DECORATION_THICKNESS}_${suffix}`)
     )
 }
 
 const TextDecorationColor: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.TEXT_DECORATION_COLOR, GhostPrefix.TEXT_DECORATION_COLOR, "10af0a"),
     body: TextDecorationBodyExample(
-        ["red", "blue", "pink", "fa0afa"].map(suffix => `${GhostPrefix.TEXT_DECORATION_COLOR}_${suffix}`)
+        ["red", "blue", "pink", "fa0afa"]
+            .map(suffix => `${GhostPrefix.TEXT_DECORATION_COLOR}_${suffix}`)
     )
 };
 
