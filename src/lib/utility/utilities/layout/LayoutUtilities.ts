@@ -2,9 +2,8 @@ import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneDeclarationUtility from "../../common/OneDeclarationUtility";
-import ClassNameTransformer from "../../common/transformers/ClassNameTransformer";
+import { BoxTransformer } from "./transformers";
 
-export const BoxTransformer: ClassNameTransformer = (suffix: string) => `${suffix}-box`;
 const BoxUtility: Utilities = OneDeclarationUtility(GhostPrefix.BOX, PropertyCSS.BOX_SIZING, BoxTransformer);
 
 const FloatUtility: Utilities = OneDeclarationUtility(GhostPrefix.FLOAT, PropertyCSS.FLOAT);

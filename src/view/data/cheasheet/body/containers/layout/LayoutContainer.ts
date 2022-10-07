@@ -1,11 +1,11 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { BoxTransformer } from "../../../../../../lib/utility/utilities/layout/LayoutUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
 import { GenericOverflow, GenericOverscroll } from "./Helper";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
+import { BoxTransformer } from "../../../../../../lib/utility/utilities/layout/transformers";
 
 const Display: RowProps = {
     header: {
