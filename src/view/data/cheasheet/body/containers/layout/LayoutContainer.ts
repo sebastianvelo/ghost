@@ -4,7 +4,6 @@ import { RowProps } from "../../../../../components/pages/cheatsheet/body/sectio
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import { GenericOverflow, GenericOverscroll } from "./Helper";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
-import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
 import { BoxTransformer } from "../../../../../../lib/utility/utilities/layout/transformers";
 
 const Display: RowProps = {
@@ -16,39 +15,12 @@ const Display: RowProps = {
     },
 };
 
-const Position: RowProps = {
-    header: {
-        cssProperties: [PropertyCSS.POSITION],
-        prefix: GhostPrefix.POSITION,
-        possibleSuffixes: ["static", "absolute", "fixed", "relative", "sticky"],
-        example: { suffix: "absolute" }
-    }
-};
-
 const BoxSizing: RowProps = {
     header: {
         cssProperties: [PropertyCSS.BOX_SIZING],
         prefix: GhostPrefix.BOX,
         possibleSuffixes: ["border", "content"],
         example: { suffix: "border", transformer: BoxTransformer, }
-    }
-};
-
-const Float: RowProps = {
-    header: {
-        cssProperties: [PropertyCSS.FLOAT],
-        prefix: GhostPrefix.FLOAT,
-        possibleSuffixes: ["right", "left", "none"],
-        example: { suffix: "right" }
-    }
-};
-
-const Clear: RowProps = {
-    header: {
-        cssProperties: [PropertyCSS.CLEAR],
-        prefix: GhostPrefix.CLEAR,
-        possibleSuffixes: ["right", "left", "both", "none"],
-        example: { suffix: "both" }
     }
 };
 
@@ -82,30 +54,18 @@ const OverscrollY = GenericOverscroll(PropertyCSS.OVERSCROLL_Y, GhostPrefix.OVER
 
 const OverscrollX = GenericOverscroll(PropertyCSS.OVERSCROLL_X, GhostPrefix.OVERSCROLL_X);
 
-const Top = UtilityIntegerUnitSuffix(PropertyCSS.TOP, GhostPrefix.TOP, 10);
-
-const Bottom = UtilityIntegerUnitSuffix(PropertyCSS.BOTTOM, GhostPrefix.BOTTOM, 16);
-
-const Right = UtilityIntegerUnitSuffix(PropertyCSS.RIGHT, GhostPrefix.RIGHT, 4);
-
-const Left = UtilityIntegerUnitSuffix(PropertyCSS.LEFT, GhostPrefix.LEFT, 0);
-
 const ZIndex = UtilityIntegerSuffix(PropertyCSS.Z_INDEX, GhostPrefix.Z_INDEX, 30);
 
 const LayoutContainer: RowsContainersProps = {
     title: "Layout",
     rows: [
         Display,
-        Position,
+        Visibility,
+        ZIndex,
         BoxSizing,
-        Float,
-        Clear,
         ObjectFit,
         Overflow, OverflowX, OverflowY,
         Overscroll, OverscrollX, OverscrollY,
-        Top, Bottom, Left, Right,
-        ZIndex,
-        Visibility,
     ]
 };
 

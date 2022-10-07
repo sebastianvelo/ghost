@@ -4,10 +4,12 @@ import BorderContainer from "./containers/border/BorderContainer";
 import FlexContainer from "./containers/flex/FlexContainer";
 import FlexAndGridContainer from "./containers/flexAndGrid/FlexAndGridContainer";
 import GridContainer from "./containers/grid/GridContainer";
+import InteractivityContainer from "./containers/interactivity/InteractivityContainer";
 import LayoutContainer from "./containers/layout/LayoutContainer";
 import MarginContainer from "./containers/margin/MarginContainer";
 import OutlineContainer from "./containers/outline/OutlineContainer";
 import PaddingContainer from "./containers/padding/PaddingContainer";
+import PositioningContainer from "./containers/positioning/PositioningContainer";
 import PseudoclassesContainer from "./containers/pseudoclasses/PseudoclassesContainer";
 import SizingContainer from "./containers/sizing/SizingContainer";
 import SpaceBetweenContainer from "./containers/spaceBetween/SpaceBetweenContainer";
@@ -23,10 +25,17 @@ export const GeneralSection: CheatsheetSectionProps = {
     ]
 };
 
-export const LayoutFlexAndGridSection: CheatsheetSectionProps = {
-    title: "Layout, Flex and Grid",
+export const LayoutPositioningSection: CheatsheetSectionProps = {
+    title: "Layout",
     containers: [
         LayoutContainer,
+        PositioningContainer,
+    ]
+};
+
+export const FlexAndGridSection: CheatsheetSectionProps = {
+    title: "Flex and Grid",
+    containers: [
         FlexAndGridContainer,
         FlexContainer,
         GridContainer,
@@ -54,6 +63,7 @@ export const InteractivitySection: CheatsheetSectionProps = {
     title: "Interactivity",
     containers: [
         TransitionContainer,
+        InteractivityContainer,
     ]
 };
 

@@ -1,6 +1,6 @@
 const Layout = (body: string) => `
     <header class="d_flex fd_col px_20">
-        <a href="/#/home" class="txt-size_38 txt_white">GhostCSS</a>
+        <h1 class="txt-size_38 txt_white">GhostCSS</h1>
     </header>
     <main class="overflow_hidden py_32 px_64 bg_0-0-0">
         ${body}
