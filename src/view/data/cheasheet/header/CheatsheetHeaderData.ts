@@ -1,4 +1,6 @@
-import { TableHeaderProps } from "../../../components/table/header/TableHeader";
+export interface TableHeaderProps {
+    columns: string[];
+}
 
 const CheatsheetHeaderData: TableHeaderProps = {
     columns: [

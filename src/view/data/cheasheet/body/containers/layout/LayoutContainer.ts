@@ -1,7 +1,7 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { RowProps } from "../../../../../components/row/Row";
-import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
+import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/category/row/RowsContainer";
 import { GenericOverflow, GenericOverscroll } from "./Helper";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";

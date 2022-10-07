@@ -1,7 +1,7 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { RowProps } from "../../../../../components/row/Row";
-import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
+import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/category/row/RowsContainer";
 import GenericBodyExample from "../../common/body/GenericBodyExample";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
 import { GenericBorder } from "./Helper";
@@ -15,7 +15,7 @@ const Outline: RowProps = GenericBorder({
 const OutlineWidth: RowProps = {
     ...UtilityIntegerUnitSuffix(PropertyCSS.OUTLINE_WIDTH, GhostPrefix.OUTLINE_WIDTH, 5),
     body: GenericBodyExample({
-        classNames: ["2", "4", "10"]
+        classNames: ["0", "4", "10"]
             .map(suffix => `${GhostPrefix.OUTLINE_WIDTH}_${suffix}`),
         aditionalClassName: "outline-c_primary outline-s_solid w_150 h_150 bg_secondary",
     })

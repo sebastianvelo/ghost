@@ -1,7 +1,7 @@
-import { PropertySeparator, SuffixSeparator } from "../../../lib/common/types";
-import GhostPrefix from "../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../lib/utility/PropertyCSS";
-import ClassNameTransformer from "../../../lib/utility/common/transformers/ClassNameTransformer";
+import { PropertySeparator, SuffixSeparator } from "../../../../../../../lib/common/types";
+import GhostPrefix from "../../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../../lib/utility/PropertyCSS";
+import ClassNameTransformer from "../../../../../../../lib/utility/common/transformers/ClassNameTransformer";
 
 export interface RowHeaderProps {
     cssProperties: PropertyCSS[];
@@ -20,7 +20,7 @@ export interface RowProps {
 }
 const Column = (column: string, span = 1) => `<p class="px_26 leading_2 col-span_${span}">${column}</p>`;
 
-const suffixIntegerValues = ["number", "numberUnit", "percentage", "divisor-dividend", "r", "g", "b", "a", "thickness", "x1", "x2", "y1", "y2"];
+const suffixIntegerValues = ["width", "number", "numberUnit", "percentage", "divisor-dividend", "r", "g", "b", "a", "thickness", "x1", "x2", "y1", "y2"];
 const valueIntegerValues = ["px", "rem", "em", "%"];
 const suffixIsItInteger = (suffix: string) => suffixIntegerValues.includes(suffix);
 const valueIsItInteger = (value: string) => !isNaN(+value) || valueIntegerValues.some(v => value.includes(v));
@@ -56,20 +56,20 @@ const Example = (props: RowHeaderProps) => {
 }
 
 const rowColor = {
-    "true": "bg_255-255-255-17",
-    "false": "bg_255-255-255-5",
+    "true": "bg_255-255-255-10",
+    "false": "bg_secondary",
 };
 
 const Row = (props: RowProps, idx: number) => `
     <details>
-        <summary class="d_grid align-items_center cols_6 px_12 ${rowColor[`${idx % 2 === 0}`]} ${props.body ? "bg_secondary:hover transition_background-color duration_500 timing-function_ease-in-out" : ""}" >
+        <summary class="d_grid align-items_center cols_6 px_12 box_border border_2-transparent ${rowColor[`${idx % 2 === 0}`]} ${props.body ? "bg_black:hover border_2-primary:hover transition_all-250-ease-in-out" : ""}" >
             ${Column(Properties(props.header.cssProperties))}
             ${Column(Prefix(props.header.prefix))}
             ${Column(Suffixes(props.header.possibleSuffixes), 2)}
             ${Column(Example(props.header), 2)}
         </summary>
         ${props.body ? `
-            <div class="p_12 bg_255-255-255-20">
+            <div class="p_12 bg_255-255-255-50">
                 ${props.body}
             </div>
         ` : ""}

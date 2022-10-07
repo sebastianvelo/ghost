@@ -1,8 +1,8 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-import { RowProps } from "../../../../../components/row/Row";
-import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
+import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/category/row/RowsContainer";
 import GridSpanStartEndBodyExample from "./body/GridSpanStartEndBodyExample";
 import { GenericGridAuto } from "./Helper";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";

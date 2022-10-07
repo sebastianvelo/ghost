@@ -1,5 +1,5 @@
-import { RowProps } from "../../../../../components/row/Row";
-import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
+import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/category/row/RowsContainer";
 import FocusBodyExample from "./body/FocusBodyExample";
 import HoverBodyExample from "./body/HoverBodyExample";
 import { GenericPseudoclass, GenericPseudoclassChild } from "./Helper";

@@ -1,7 +1,7 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import ClassNameTransformer from "../../../../../../lib/utility/common/transformers/ClassNameTransformer";
-import { RowProps } from "../../../../../components/row/Row";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
 import GridTemplateBodyExample from "../grid/body/GridTemplateBodyExample";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
 import AlignmentContentBodyExample from "./body/AlignmentContentBodyExample";

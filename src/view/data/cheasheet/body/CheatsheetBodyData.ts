@@ -1,4 +1,4 @@
-import { TableBodyProps } from "../../../components/table/body/TableBody";
+import { CheatsheetSectionProps } from "../../../components/pages/cheatsheet/body/section/CheatsheetSection";
 import BackgroundContainer from "./containers/background/BackgroundContainer";
 import BorderContainer from "./containers/border/BorderContainer";
 import FlexContainer from "./containers/flex/FlexContainer";
@@ -14,23 +14,52 @@ import SpaceBetweenContainer from "./containers/spaceBetween/SpaceBetweenContain
 import TransitionContainer from "./containers/transition/TransitionContainer";
 import TypographyContainer from "./containers/typography/TypographyContainer";
 
-const CheatsheetBodyData: TableBodyProps = {
+export const BasicsSection: CheatsheetSectionProps = {
+    title: "Basics",
     containers: [
         TypographyContainer,
         BackgroundContainer,
         SizingContainer,
-        PseudoclassesContainer,
-        TransitionContainer,
-        BorderContainer,
-        OutlineContainer,
-        FlexAndGridContainer,
-        FlexContainer,
-        GridContainer,
-        PaddingContainer,
-        MarginContainer,
-        SpaceBetweenContainer,
-        LayoutContainer,
     ]
 };
 
-export default CheatsheetBodyData;
+export const LayoutFlexAndGridSection: CheatsheetSectionProps = {
+    title: "Layout, Flex and Grid",
+    containers: [
+        LayoutContainer,
+        FlexAndGridContainer,
+        FlexContainer,
+        GridContainer,
+    ]
+};
+
+export const SpacingSection: CheatsheetSectionProps = {
+    title: "Spacing",
+    containers: [
+        PaddingContainer,
+        MarginContainer,
+        SpaceBetweenContainer,
+    ]
+};
+
+export const BorderAndOutlineSection: CheatsheetSectionProps = {
+    title: "Border and Outline",
+    containers: [
+        BorderContainer,
+        OutlineContainer,
+    ]
+};
+
+export const InteractivitySection: CheatsheetSectionProps = {
+    title: "Interactivity",
+    containers: [
+        TransitionContainer,
+    ]
+};
+
+export const OptionsSection: CheatsheetSectionProps = {
+    title: "Options",
+    containers: [
+        PseudoclassesContainer,
+    ]
+};
