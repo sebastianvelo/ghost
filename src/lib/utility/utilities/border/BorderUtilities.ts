@@ -30,7 +30,7 @@ const BorderUtilities: Utilities = {
             { property: PropertyCSS.BORDER_BOTTOM, transformer: BorderTransformer }
         ],
     },
-    ...OneActionUtility(GhostPrefix.BORDER_RADIUS, PropertyCSS.BORDER_RADIUS, BorderRadiusTransformer),
+    ...OneActionUtility(GhostPrefix.BORDER_RADIUS, PropertyCSS.BORDER_RADIUS),
 };
 
 export default BorderUtilities;

@@ -7,10 +7,10 @@ const ClassNameExample = (className: string) =>
         <div class="bg_0-255-255-90"></div>
         <div class="bg_0-255-255-80"></div>
         <div class="bg_0-255-255-60"></div>
-        <div class="bg_primary ${className}"></div>
-        <div class="bg_0-255-255-100"></div>
-        <div class="bg_0-255-255-90"></div>
-        <div class="bg_0-255-255-80"></div>
+        <div class="bg_secondary ${className}"></div>
+        <div class="bg_0-255-255-30"></div>
+        <div class="bg_0-255-255-20"></div>
+        <div class="bg_0-255-255-10"></div>
     </div>
 `);
 

@@ -3,7 +3,9 @@ import GhostConfig from "./GhostConfig";
 const config: GhostConfig = {
     aliases: {
         colors: {
-            primary: "0-0-100",
+            primary: "FCCA46",
+            primaryLight: "ffe7a1",
+            secondary: "0C2233",
         }
     }
 };

@@ -1,4 +1,12 @@
 enum PropertyCSS {
+  GENERIC = "any-property",
+  
+  TRANSITION = "transition",
+  TRANSITION_DELAY = "transition-delay",
+  TRANSITION_DURATION = "transition-duration",
+  TRANSITION_PROPERTY = "transition-property",
+  TRANSITION_TIMING_FUNCTION = "transition-timing-function",
+
   BG_COLOR = "background-color",
   BG_ATTACHMENT = "background-attachment",
   BG_BLEND = "background-blend-mode",

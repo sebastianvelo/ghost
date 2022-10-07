@@ -1,4 +1,12 @@
 enum GhostPrefix {
+  GENERIC = "any-prefix",
+
+  TRANSITION = "transition",
+  TRANSITION_DELAY = "delay",
+  TRANSITION_DURATION = "duration",
+  TRANSITION_PROPERTY = "transition-p",
+  TRANSITION_TIMING_FUNCTION = "timing-function",
+
   BG_COLOR = "bg",
   BG_ATTACHMENT = "bg-attach",
   BG_BLEND = "bg-blend",
@@ -24,7 +32,7 @@ enum GhostPrefix {
   TEXT_ALIGN = "txt-align",
   FONT_FAMILY = "font",
   LETTER_SPACING = "tracking",
-  LINE_HEIGHT = "line-h",
+  LINE_HEIGHT = "leading",
   LIST_STYLE_TYPE = "list-type",
 
   DISPLAY = "d",

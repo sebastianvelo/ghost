@@ -19,5 +19,4 @@ const init = () => {
     styleSheet.addRulesWithClasses(classes);
 };
 
-
 export default init;

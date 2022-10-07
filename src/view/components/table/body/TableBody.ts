@@ -5,7 +5,7 @@ export interface TableBodyProps {
 }
 
 const TableBody = (props: TableBodyProps) => `
-    <div class="mt_75 p_12">
+    <div class="p_12 space-y_16">
         ${props.containers.map(RowsContainer).join(" ")}
     </div>
 `;

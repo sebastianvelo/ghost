@@ -14,10 +14,10 @@ const ClassNameExample = (className: string, aditionalClassName?: string, conten
         </${tag}>
     `);
 
-const BodyExample = (props: BodyExampleProps) => `
-    <div class="d_grid cols_3">
+const GenericBodyExample = (props: BodyExampleProps) => `
+    <div class="d_grid cols_3 gap_4 place-items_stretch">
         ${props.classNames.map(className => ClassNameExample(className, props.aditionalClassName, props.content, props.tag)).join(" ")}
     </div>
 `;
 
-export default BodyExample;
+export default GenericBodyExample;

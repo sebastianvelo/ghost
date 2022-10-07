@@ -10,6 +10,7 @@ import MarginUtilities from "./margin/MarginUtilities";
 import PaddingUtilities from "./padding/PaddingUtilities";
 import SizingUtilities from "./sizing/SizingUtilities";
 import SpaceUtilities from "./space/SpaceUtilities";
+import TransitionUtilities from "./transition/TransitionUtilities";
 import TypographyUtilities from "./typography/TypographyUtilities";
 
 const Utilities: IUtilities = {
@@ -24,6 +25,7 @@ const Utilities: IUtilities = {
     ...FlexUtilities,
     ...GridUtilities,
     ...FlexAndGridUtilities,
+    ...TransitionUtilities,
 };
 
 

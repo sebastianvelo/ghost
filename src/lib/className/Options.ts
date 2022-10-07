@@ -1,4 +1,4 @@
-import { OptionsSeparatorType } from "../common/stylesheet";
+import { OptionsSeparatorType } from "../common/types";
 
 type None = "";
 

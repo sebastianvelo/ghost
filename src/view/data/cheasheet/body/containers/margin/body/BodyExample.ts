@@ -9,9 +9,9 @@ const ClassNameExample = (className: string, fullRowExample?: boolean) =>
                 <div class="w_50 h_50 bg_0-255-255-80"></div>
             </div>
             <div class="d_flex ${fullRowExample ? className : ""}">
-                <div class="w_50 h_50 ${fullRowExample ? "bg_primary" : "bg_0-255-255-70"}"></div>
-                <div class="w_50 h_50 bg_primary ${!fullRowExample ? className : ""}"></div>
-                <div class="w_50 h_50 ${fullRowExample ? "bg_primary" : "bg_0-255-255-60"}"></div>
+                <div class="w_50 h_50 ${fullRowExample ? "bg_secondary" : "bg_0-255-255-70"}"></div>
+                <div class="w_50 h_50 bg_secondary ${!fullRowExample ? className : ""}"></div>
+                <div class="w_50 h_50 ${fullRowExample ? "bg_secondary" : "bg_0-255-255-60"}"></div>
             </div>
             <div class="d_flex m_0">
                 <div class="w_50 h_50 bg_0-255-255-50"></div>

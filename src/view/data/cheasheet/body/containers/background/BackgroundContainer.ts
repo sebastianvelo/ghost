@@ -4,14 +4,14 @@ import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/
 import { BackgroundPositioningTransformer, BackgroundRepeatTransformer } from "../../../../../../lib/utility/utilities/background/BackgroundUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
-import BodyExample from "../../common/body/BodyExample";
+import GenericBodyExample from "../../common/body/GenericBodyExample";
 import UtilityColorSuffix from "../../common/helpers/UtilityColorSuffix";
 import { GenericBackground } from "./Helper";
 import { BackgroundAttachmentSuffixes, BackgroundBlendModeSuffixes, BackgroundPositioningSuffixes, BackgroundPositionSuffixes, BackgroundRepeatSuffixes } from "./Suffixes";
 
 const BackgroundColor: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.BG_COLOR, GhostPrefix.BG_COLOR, "200-10-102-50"),
-    body: BodyExample({
+    body: GenericBodyExample({
         classNames: ["bg_0-40-200", "bg_0-40-200-50", "bg_92AFDA", "bg_tomato"],
         aditionalClassName: "w_150 h_150",
     })

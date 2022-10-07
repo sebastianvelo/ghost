@@ -9,4 +9,4 @@ export const FontVariantSuffixes = ["normal", "small-caps"];
 export const FontVariantCapsSuffixes = ["normal", "small-caps", "all-small-caps", "petite-caps", "all-petite-caps", "unicase", "titling-caps"];
 export const TextDecorationLineSuffixes = ["none", "underline", "overline", "line-through"];
 export const TextDecorationStyleSuffixes = ["solid", "double", "dotted", "dashed", "wavy"];
-
+export const TextOverflowSuffixes = ["clip", "ellipsis"];

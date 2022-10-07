@@ -1,7 +1,7 @@
 import GenericClassNameExample from "../../../common/body/GenericClassNameExample";
 
 const ClassNameExample = (className: string, size = 9) => GenericClassNameExample(className, `
-    <div class="bg_primary">
+    <div class="bg_secondary">
         <div class="d_grid cols_3 ${className} h_100 w_300">
             ${Array(size).fill("").map((_, i) => `
                 <div class="min-w_50 min-h_50 bg_0-255-255-${100 - (i * 5)}"></div>    

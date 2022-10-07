@@ -1,8 +1,8 @@
-import BodyExample from "../../common/body/BodyExample";
+import GenericBodyExample from "../../common/body/GenericBodyExample";
 
-const BorderBodyExample = (classNames: string[]) => BodyExample({
+const BorderBodyExample = (classNames: string[]) => GenericBodyExample({
     classNames,
-    aditionalClassName: "w_150 h_150 bg_255-255-255-50",
+    aditionalClassName: "w_150 h_150 bg_primary",
 });
 
 export default BorderBodyExample;

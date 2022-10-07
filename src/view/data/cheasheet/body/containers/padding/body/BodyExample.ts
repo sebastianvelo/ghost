@@ -2,7 +2,7 @@ import GenericClassNameExample from "../../../common/body/GenericClassNameExampl
 
 const ClassNameExample = (className: string) =>
     GenericClassNameExample(className, `
-        <div class="d_flex bg_primary ${className}">
+        <div class="d_flex bg_secondary ${className}">
             <div class="w_50 h_50 bg_0-255-255-100"></div>
             <div class="w_50 h_50 bg_0-255-255-80"></div>
             <div class="w_50 h_50 bg_0-255-255-60"></div>
