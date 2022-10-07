@@ -2,16 +2,7 @@ import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneDeclarationUtility from "../../common/OneDeclarationUtility";
-
-export const FlexBasisTransformer = (suffix: string) => {
-    const [divisor, dividend] = suffix.split("-");
-    if (!dividend) return `${divisor}%`;
-
-    const result = (+divisor / +dividend) * 100;
-    return `${result}%`;
-}
-
-export const FlexDirectionTransformer = (suffix: string) => suffix.replace(/col/, "column");
+import { FlexBasisTransformer, FlexDirectionTransformer } from "./transformers";
 
 const FlexUtilities: Utilities = {
     ...OneDeclarationUtility(GhostPrefix.FLEX_BASIS, PropertyCSS.FLEX_BASIS, FlexBasisTransformer),
