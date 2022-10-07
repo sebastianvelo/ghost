@@ -3,14 +3,7 @@ import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneDeclarationUtility from "../../common/OneDeclarationUtility";
 import ReplaceSeparatorWithSpaceTransformer from "../../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-
-export const GridTemplateTransformer = (suffix: string) => `repeat(${suffix}, minmax(0, 1fr))`;
-export const GridSpanTransformer = (suffix: string) => `span ${suffix} / span ${suffix}`;
-export const GridAutoTransformer = (suffix: string) => {
-    if (["min", "max"].includes(suffix))
-        return `${suffix}-content`;
-    return suffix;
-};
+import { GridTemplateTransformer, GridSpanTransformer, GridAutoTransformer } from "./transformers";
 
 const GridUtilities: Utilities = {
     ...OneDeclarationUtility(GhostPrefix.GRID_TEMPLATE_COLUMNS, PropertyCSS.GRID_TEMPLATE_COLUMNS, GridTemplateTransformer),

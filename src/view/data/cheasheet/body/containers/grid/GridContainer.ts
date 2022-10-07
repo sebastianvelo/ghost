@@ -1,7 +1,6 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-import { GridSpanTransformer, GridTemplateTransformer } from "../../../../../../lib/utility/utilities/grid/GridUtilities";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
 import GridSpanStartEndBodyExample from "./body/GridSpanStartEndBodyExample";
@@ -9,6 +8,7 @@ import { GenericGridAuto } from "./Helper";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
 import { GridFlowSuffixes } from "./Suffixes";
 import GridTemplateBodyExample from "./body/GridTemplateBodyExample";
+import { GridSpanTransformer, GridTemplateTransformer } from "../../../../../../lib/utility/utilities/grid/transformers";
 
 const GridTemplateColumns: RowProps = {
     header: {
