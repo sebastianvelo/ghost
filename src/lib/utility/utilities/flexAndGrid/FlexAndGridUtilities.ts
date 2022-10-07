@@ -2,45 +2,7 @@ import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
 import OneDeclarationUtility from "../../common/OneDeclarationUtility";
-
-const ContentMap: any = {
-    start: "flex-start",
-    end: "flex-end",
-    center: "center",
-    between: "space-between",
-    around: "space-around",
-    evenly: "space-evenly",
-};
-
-const ItemsMap: any = {
-    start: "flex-start",
-    end: "flex-end",
-    center: "center",
-    baseline: "baseline",
-    stretch: "stretch"
-};
-
-const SelfMap: any = {
-    start: "flex-start",
-    end: "flex-end",
-    center: "center",
-    baseline: "baseline",
-    stretch: "stretch",
-    auto: "auto"
-};
-
-export const ContentTransformer = (suffix: string) => ContentMap[suffix];
-export const AlignItemsTransformer = (suffix: string) => ItemsMap[suffix];
-export const AlignSelfTransformer = (suffix: string) => SelfMap[suffix];
-
-export const OrderTransformer = (suffix: string) => {
-    if (suffix === "first") return "-9999";
-    if (suffix === "last") return "9999";
-    if (suffix === "none") return "0";
-    return suffix;
-}
-
-export const GridGapTransformer = (suffix: string) => isNaN(+suffix) ? suffix : `${suffix}px`;
+import { ContentTransformer, AlignItemsTransformer, AlignSelfTransformer, GridGapTransformer, OrderTransformer } from "./transformers";
 
 const FlexAndGridUtilities: Utilities = {
     ...OneDeclarationUtility(GhostPrefix.ORDER, PropertyCSS.ORDER, OrderTransformer),

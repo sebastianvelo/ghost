@@ -1,6 +1,6 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { AlignItemsTransformer, ContentTransformer } from "../../../../../../lib/utility/utilities/flexAndGrid/FlexAndGridUtilities";
+import { AlignItemsTransformer, AlignSelfTransformer, ContentTransformer } from "../../../../../../lib/utility/utilities/flexAndGrid/transformers";
 import { RowProps } from "../../../../../components/row/Row";
 import { RowsContainersProps } from "../../../../../components/row/RowsContainer";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
@@ -44,6 +44,7 @@ const AlignSelf: RowProps = GenericAlignmentSelfContainer({
     property: PropertyCSS.ALIGN_SELF,
     prefix: GhostPrefix.ALIGN_SELF,
     suffixes: AlignSelfSuffixes,
+    transformer: AlignSelfTransformer
 });
 
 const PlaceContent: RowProps = GenericAlignmentContentContainer({
