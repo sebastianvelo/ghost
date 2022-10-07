@@ -8,6 +8,13 @@ export const TransitionTransformer = (suffix: string) => {
 
 export const TransitionPropertyTransformer = (suffix: string) => TransitionPropertyMap[suffix] ?? suffix;
 
-export const TransitionTimingFunctionTransformer = (suffix: string) => TransitionTimingFunctionMap[suffix] ?? suffix;
+const CubicBezierValue = (n: string) => +n / 100;
+const CubicBezierValues = (...ns: string[]) => ns.map(CubicBezierValue).join(", ");
+
+export const TransitionTimingFunctionTransformer = (suffix: string) => {
+    if (TransitionTimingFunctionMap[suffix]) return TransitionTimingFunctionMap[suffix];
+    const [x1, y1, x2, y2] = suffix.split(SuffixSeparator);
+    return `cubic-bezier(${CubicBezierValues(x1, y1, x2, y2)})`;
+}
 
 export const TransitionMsTransformer = (suffix: string) => `${suffix}ms`;

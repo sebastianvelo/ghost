@@ -7,6 +7,7 @@ import FlexAndGridUtilities from "./flexAndGrid/FlexAndGridUtilities";
 import GridUtilities from "./grid/GridUtilities";
 import LayoutUtilities from "./layout/LayoutUtilities";
 import MarginUtilities from "./margin/MarginUtilities";
+import OutlineUtilities from "./outline/OutlineUtilities";
 import PaddingUtilities from "./padding/PaddingUtilities";
 import SizingUtilities from "./sizing/SizingUtilities";
 import SpaceUtilities from "./space/SpaceUtilities";
@@ -26,8 +27,8 @@ const Utilities: IUtilities = {
     ...GridUtilities,
     ...FlexAndGridUtilities,
     ...TransitionUtilities,
+    ...OutlineUtilities,
 };
-
 
 export const utilityExists = (prefix?: string): boolean => {
     if (!prefix) return false;

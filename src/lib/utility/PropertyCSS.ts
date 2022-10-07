@@ -111,6 +111,12 @@ enum PropertyCSS {
   BORDER_BOTTOM = "border-bottom",
   BORDER_RADIUS = "border-radius",
 
+  OUTLINE = "outline",
+  OUTLINE_WIDTH = "outline-width",
+  OUTLINE_OFFSET = "outline-offset",
+  OUTLINE_STYLE = "outline-style",
+  OUTLINE_COLOR = "outline-color",
+
   Z_INDEX = "z-index",
 }
 

@@ -120,6 +120,12 @@ enum GhostPrefix {
   BORDER_X = "border-x",
   BORDER_RADIUS = "rounded",
 
+  OUTLINE = "outline",
+  OUTLINE_WIDTH = "outline-w",
+  OUTLINE_OFFSET = "outline-o",
+  OUTLINE_STYLE = "outline-s",
+  OUTLINE_COLOR = "outline-c",
+
   Z_INDEX = "z",
 }
 

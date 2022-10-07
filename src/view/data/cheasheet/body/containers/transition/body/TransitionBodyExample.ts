@@ -30,8 +30,9 @@ export const TransitionTimingFunctionBodyExample = GenericBodyExample({
         "timing-function_ease-in transition-p_width",
         "timing-function_ease-out transition-p_width",
         "timing-function_ease-in-out transition-p_width",
+        "timing-function_53-0-14-84 transition-p_width",
     ],
-    aditionalClassName: genericAditionalClassName("w_100 w_300:hover duration_500"),
+    aditionalClassName: genericAditionalClassName("w_100 w_300:hover duration_900"),
     content: "hover!"
 });
  

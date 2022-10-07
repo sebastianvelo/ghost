@@ -20,7 +20,7 @@ export interface RowProps {
 }
 const Column = (column: string, span = 1) => `<p class="px_26 leading_2 col-span_${span}">${column}</p>`;
 
-const suffixIntegerValues = ["number", "numberUnit", "percentage", "divisor-dividend", "r", "g", "b", "a", "thickness"];
+const suffixIntegerValues = ["number", "numberUnit", "percentage", "divisor-dividend", "r", "g", "b", "a", "thickness", "x1", "x2", "y1", "y2"];
 const valueIntegerValues = ["px", "rem", "em", "%"];
 const suffixIsItInteger = (suffix: string) => suffixIntegerValues.includes(suffix);
 const valueIsItInteger = (value: string) => !isNaN(+value) || valueIntegerValues.some(v => value.includes(v));

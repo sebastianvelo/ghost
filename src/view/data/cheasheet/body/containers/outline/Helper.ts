@@ -14,7 +14,7 @@ export const GenericBorder = (props: GenericBorderProps): RowProps => ({
     header: {
         cssProperties: props.properties,
         prefix: props.prefix,
-        possibleSuffixes: ["numberUnit-color?-style?"],
+        possibleSuffixes: ["length-color?-style?"],
         example: { suffix: props.examples[0], transformer: BorderTransformer }
     },
     body: BorderBodyExample(props.examples.map(suffix => `${props.prefix}_${suffix}`))

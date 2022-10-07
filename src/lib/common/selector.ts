@@ -26,7 +26,8 @@ const getSelector = (prefix: PrefixClassName, options: [string, string, string])
     return `${theme} .${prefix}${breakpoint}${pseudoClass}`;
 }
 
-const scapePrefix = (prefix: PrefixClassName) => ["%", "."].reduce((acc, val) => acc.replace(val, `\\${val}`), prefix);
+const scapePrefix = (prefix: PrefixClassName) => ["%", "."]
+    .reduce((acc, val) => acc.replace(val, `\\${val}`), prefix);
 
 export const getFullSelector = (prefix: PrefixClassName, options: [string, string, string]): string => {
     const [property] = prefix.split(PropertySeparator);

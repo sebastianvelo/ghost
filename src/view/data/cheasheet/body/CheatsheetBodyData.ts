@@ -6,6 +6,7 @@ import FlexAndGridContainer from "./containers/flexAndGrid/FlexAndGridContainer"
 import GridContainer from "./containers/grid/GridContainer";
 import LayoutContainer from "./containers/layout/LayoutContainer";
 import MarginContainer from "./containers/margin/MarginContainer";
+import OutlineContainer from "./containers/outline/OutlineContainer";
 import PaddingContainer from "./containers/padding/PaddingContainer";
 import PseudoclassesContainer from "./containers/pseudoclasses/PseudoclassesContainer";
 import SizingContainer from "./containers/sizing/SizingContainer";
@@ -21,6 +22,7 @@ const CheatsheetBodyData: TableBodyProps = {
         PseudoclassesContainer,
         TransitionContainer,
         BorderContainer,
+        OutlineContainer,
         FlexAndGridContainer,
         FlexContainer,
         GridContainer,

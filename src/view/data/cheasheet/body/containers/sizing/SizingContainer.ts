@@ -12,6 +12,7 @@ const Width: RowProps = {
         aditionalClassName: "h_150 bg_secondary",
     })
 };
+
 const Height: RowProps = {
     ...UtilityIntegerUnitSuffix(PropertyCSS.HEIGHT, GhostPrefix.HEIGHT, 16),
     body: GenericBodyExample({
