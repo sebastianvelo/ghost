@@ -13,7 +13,7 @@ const ClassNameExample = (className: string, isRow?: boolean) => GenericClassNam
 `);
 
 const SpaceBetweenExample = (classNames: string[], isRow?: boolean) => `
-    <div class="d_grid align-items_center ${!isRow ? "cols_4" : "cols_2"}">
+    <div class="d_grid place-items_stretch ${!isRow ? "cols_4" : "cols_2"}">
         ${classNames.map((className) => ClassNameExample(className, isRow)).join(" ")}
     </div>
 `;

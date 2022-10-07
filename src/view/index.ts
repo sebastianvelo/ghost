@@ -1,10 +1,10 @@
 import getPageFromLocation from "./components/pages/Pages";
 import App from "./App";
-import Layout from "./layout/Layout";
+import Layout from "./components/layout/Layout";
 
 const render = () => {
-    const main = getPageFromLocation();
-    App!.innerHTML = Layout(main);
+    const page = getPageFromLocation();
+    App!.innerHTML = Layout(page);
 }
 
 export default render;

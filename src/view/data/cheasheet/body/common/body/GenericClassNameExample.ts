@@ -23,7 +23,7 @@ const FakeBrowser = (content: string) => `
 
 const GenericClassNameExample = (className: string, content?: string) => `
     <div class="d_flex fd_col justify_between align-items_center h_max-content min-w_70% py_16 px_32 rounded_0.25rem">
-        <h2 class="bg_black txt-size_12 w_100% border_1-fff rounded_0.25rem ">
+        <h2 class="bg_black txt-size_12 w_100% rounded_0.25rem ">
              ${EscapedDiv(content?.split("<").join(" ").trim().split(" ")[0].replace(/>/, ""), className)}
         </h2>
         ${content ?? "" /*content ? FakeBrowser(content) : "" */}

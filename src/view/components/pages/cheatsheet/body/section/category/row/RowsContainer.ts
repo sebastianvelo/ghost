@@ -1,4 +1,4 @@
-import CheatsheetHeaderData from "../../../../../../data/cheasheet/header/CheatsheetHeaderData";
+import CheatsheetHeaderData from "../../../../../../../data/cheasheet/header/CheatsheetHeaderData";
 import Row, { RowProps } from "./Row";
 
 export interface RowsContainersProps {
@@ -17,7 +17,7 @@ const Toggler = (title: string) => `
 const Column = (column: string, span = 1) => `<p class="txt-weight_bold txt-size_26 col-span_${span}">${column}</p>`;
 
 const Chart = (rows: RowProps[]) => `
-    <div class="mt_8 border_2-primary">
+    <div class="border-b_2-primary">
         <div class="px_32px d_grid cols_6 border-b_2 bg_secondary box_border top_0">
             ${Column(CheatsheetHeaderData.columns[0])}
             ${Column(CheatsheetHeaderData.columns[1])}
@@ -30,7 +30,7 @@ const Chart = (rows: RowProps[]) => `
 
 const RowsContainer = (props: RowsContainersProps) => `
     <details>
-        ${Toggler(props.title)}
+        ${Toggler(`${props.title} (${props.rows.length})`)}
         ${Chart(props.rows)}
     </details>
 `;

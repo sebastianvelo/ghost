@@ -12,7 +12,7 @@ const timerCalculator = () => {
     }
 }
 
-const init = () => {
+const initGhost = () => {
     const timer = timerCalculator();
     const classes: GhostClassName[] = getGhostClassNames(config.source);
     const ms = timer.total();
@@ -24,4 +24,4 @@ const init = () => {
     styleSheet.addRulesWithClasses(classes);
 };
 
-export default init;
+export default initGhost;

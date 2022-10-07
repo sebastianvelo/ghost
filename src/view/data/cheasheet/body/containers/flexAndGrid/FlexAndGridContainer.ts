@@ -1,8 +1,8 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
 import { AlignItemsTransformer, AlignSelfTransformer, ContentTransformer } from "../../../../../../lib/utility/utilities/flexAndGrid/transformers";
-import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
-import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/category/row/RowsContainer";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
+import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
 import { GenericAlignmentContentContainer, GenericAlignmentItemsContainer, GenericAlignmentSelfContainer, GenericGapContainer} from "./Helper";
 import { AlignContentSuffixes, AlignItemsSuffixes, AlignSelfSuffixes, JustifyContentSuffixes, JustifyItemsSuffixes, JustifySelfSuffixes, PlaceContentSuffixes, PlaceItemsSuffixes, PlaceSelfSuffixes } from "./Suffixes";

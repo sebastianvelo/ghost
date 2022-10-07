@@ -22,7 +22,7 @@ const ClassNameExample = (className: string, fullRowExample?: boolean) =>
     `);
 
 const MarginBodyExample = (classNames: string[], fullRowExample?: boolean) => `
-    <div class="d_grid align-items_center cols_2">
+    <div class="d_grid place-items_stretch cols_2">
         ${classNames.map((className) => ClassNameExample(className, fullRowExample)).join(" ")}
     </div>
 `;

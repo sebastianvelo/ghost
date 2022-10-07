@@ -14,8 +14,8 @@ import SpaceBetweenContainer from "./containers/spaceBetween/SpaceBetweenContain
 import TransitionContainer from "./containers/transition/TransitionContainer";
 import TypographyContainer from "./containers/typography/TypographyContainer";
 
-export const BasicsSection: CheatsheetSectionProps = {
-    title: "Basics",
+export const GeneralSection: CheatsheetSectionProps = {
+    title: "General",
     containers: [
         TypographyContainer,
         BackgroundContainer,

@@ -2,8 +2,8 @@ import GhostClassName from "./className/GhostClassName";
 import { MediaRule, MinBreakpoint, Rule } from "./common/stylesheet";
 import { Declaration } from "./common/types";
 import getUtility from "./common/utility";
-import { setColorAliases } from "./custom/CustomColors";
-import GhostConfig from "./GhostConfig";
+import { setColorAliases } from "./config/CustomColors";
+import GhostConfig from "./config/GhostConfig";
 
 const initializeConfig = (config: GhostConfig) => {
   if (config.aliases?.colors) {

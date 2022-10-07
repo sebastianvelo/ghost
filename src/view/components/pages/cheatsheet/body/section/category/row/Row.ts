@@ -1,7 +1,7 @@
-import { PropertySeparator, SuffixSeparator } from "../../../../../../../lib/common/types";
-import GhostPrefix from "../../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../../lib/utility/PropertyCSS";
-import ClassNameTransformer from "../../../../../../../lib/utility/common/transformers/ClassNameTransformer";
+import { PropertySeparator, SuffixSeparator } from "../../../../../../../../lib/common/types";
+import GhostPrefix from "../../../../../../../../lib/utility/GhostPrefix";
+import PropertyCSS from "../../../../../../../../lib/utility/PropertyCSS";
+import ClassNameTransformer from "../../../../../../../../lib/utility/common/transformers/ClassNameTransformer";
 
 export interface RowHeaderProps {
     cssProperties: PropertyCSS[];
@@ -62,7 +62,7 @@ const rowColor = {
 
 const Row = (props: RowProps, idx: number) => `
     <details>
-        <summary class="d_grid align-items_center cols_6 px_12 box_border border_2-transparent ${rowColor[`${idx % 2 === 0}`]} ${props.body ? "bg_black:hover border_2-primary:hover transition_all-250-ease-in-out" : ""}" >
+        <summary class="d_grid align-items_center cols_6 px_12 box_border border_2-transparent ${rowColor[`${idx % 2 === 0}`]} ${props.body ? "bg_black:hover border-y_2-primary:hover transition_all-250-ease-in-out" : ""}" >
             ${Column(Properties(props.header.cssProperties))}
             ${Column(Prefix(props.header.prefix))}
             ${Column(Suffixes(props.header.possibleSuffixes), 2)}

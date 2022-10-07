@@ -2,7 +2,7 @@ import GenericClassNameExample from "../../../common/body/GenericClassNameExampl
 
 const classNames = (pseudoClass: string) => [
     `bg_primary:${pseudoClass}`,
-    `border-t_4-fuchsia:${pseudoClass}`,
+    `border-t_4-primary:${pseudoClass}`,
 ];
 
 const ClassNameExample = (className: string) => GenericClassNameExample(className, `
@@ -14,7 +14,7 @@ const ClassNameExample = (className: string) => GenericClassNameExample(classNam
 `);
 
 const ChildBodyExample = (pseudoClass: string) =>  `
-    <div class="d_grid align-items_center cols_2">
+    <div class="d_grid place-items_stretch cols_2">
         ${classNames(pseudoClass).map((className) => ClassNameExample(className)).join(" ")}
     </div>
 `;

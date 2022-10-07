@@ -1,4 +1,4 @@
-import GhostConfig from "./GhostConfig";
+import GhostConfig from "./config/GhostConfig";
 
 const config: GhostConfig = {
     source: "onload",

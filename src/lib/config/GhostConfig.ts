@@ -1,4 +1,4 @@
-import { ColorCustomizationConfig } from "./custom/CustomColors";
+import { ColorCustomizationConfig } from "./CustomColors";
 
 type Source = "onload";
 

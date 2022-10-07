@@ -5,7 +5,7 @@ export interface CheatsheetTableProps {
 };
 
 const CheatsheetTable = (props: CheatsheetTableProps) => `
-    <div class="txt_whitesmoke">
+    <div class="txt_whitesmoke space-y_4rem">
         ${props.sections.map(CheatsheetSection).join(" ")}
     </div>
 `;

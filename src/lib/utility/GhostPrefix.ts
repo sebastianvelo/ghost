@@ -1,6 +1,13 @@
 enum GhostPrefix {
   GENERIC = "any-prefix",
 
+  CURSOR = "cursor",
+  CARET_COLOR = "caret",
+  ACCENT_COLOR = "accent",
+  POINTER_EVENTS = "pointer-events",
+  SCROLL_BEHAVIOR = "scroll",
+  RESIZE = "resize",
+
   TRANSITION = "transition",
   TRANSITION_DELAY = "delay",
   TRANSITION_DURATION = "duration",

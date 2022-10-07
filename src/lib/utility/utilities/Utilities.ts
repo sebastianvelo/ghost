@@ -5,6 +5,7 @@ import BorderUtilities from "./border/BorderUtilities";
 import FlexUtilities from "./flex/FlexUtilities";
 import FlexAndGridUtilities from "./flexAndGrid/FlexAndGridUtilities";
 import GridUtilities from "./grid/GridUtilities";
+import InteractivityUtilities from "./interactivity/InteractivityUtilities";
 import LayoutUtilities from "./layout/LayoutUtilities";
 import MarginUtilities from "./margin/MarginUtilities";
 import OutlineUtilities from "./outline/OutlineUtilities";
@@ -19,15 +20,16 @@ const Utilities: IUtilities = {
     ...TypographyUtilities,
     ...PaddingUtilities,
     ...MarginUtilities,
-    ...SizingUtilities,
     ...SpaceUtilities,
+    ...SizingUtilities,
     ...BorderUtilities,
+    ...OutlineUtilities,
     ...LayoutUtilities,
     ...FlexUtilities,
     ...GridUtilities,
     ...FlexAndGridUtilities,
     ...TransitionUtilities,
-    ...OutlineUtilities,
+    ...InteractivityUtilities,
 };
 
 export const utilityExists = (prefix?: string): boolean => {

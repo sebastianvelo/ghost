@@ -1,6 +1,13 @@
 enum PropertyCSS {
   GENERIC = "any-property",
-  
+
+  CURSOR = "cursor",
+  CARET_COLOR = "caret-color",
+  ACCENT_COLOR = "accent-color",
+  POINTER_EVENTS = "pointer-events",
+  SCROLL_BEHAVIOR = "scroll-behavior",
+  RESIZE = "resize",
+
   TRANSITION = "transition",
   TRANSITION_DELAY = "transition-delay",
   TRANSITION_DURATION = "transition-duration",

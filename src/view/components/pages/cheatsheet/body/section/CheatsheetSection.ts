@@ -1,5 +1,5 @@
-import Category from "../category/Category";
-import { RowsContainersProps } from "../category/row/RowsContainer";
+import Category from "./category/Category";
+import { RowsContainersProps } from "./category/row/RowsContainer";
 
 export interface CheatsheetSectionProps {
     title: string;

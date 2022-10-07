@@ -1,7 +1,7 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
-import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/category/row/RowsContainer";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
+import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import GenericBodyExample from "../../common/body/GenericBodyExample";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
 

@@ -5,7 +5,7 @@ export interface CategoryProps {
 }
 
 const Category = (props: CategoryProps) => `
-    <div class="p_12 space-y_16">
+    <div class="space-y_16">
         ${props.containers.map(RowsContainer).join(" ")}
     </div>
 `;

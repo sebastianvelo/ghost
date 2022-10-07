@@ -1,6 +1,6 @@
 import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { RowProps } from "../../../../../components/pages/cheatsheet/body/category/row/Row";
+import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 
 const UtilityIntegerUnitSuffix = (property: PropertyCSS, prefix: GhostPrefix, suffix: number, unit: string = "px"): RowProps => ({
     header: {

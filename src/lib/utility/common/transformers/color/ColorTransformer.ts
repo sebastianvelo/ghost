@@ -1,5 +1,5 @@
 import { SuffixSeparator } from "../../../../common/types";
-import { getValue } from "../../../../custom/CustomColors";
+import { getValue } from "../../../../config/CustomColors";
 import ClassNameTransformer from "../ClassNameTransformer";
 
 const getRGBA = (suffix: string[]) => {

@@ -1,8 +1,8 @@
-export interface TableHeaderProps {
+export interface CheatsheetHeaderProps {
     columns: string[];
 }
 
-const CheatsheetHeaderData: TableHeaderProps = {
+const CheatsheetHeaderData: CheatsheetHeaderProps = {
     columns: [
         "CSS Properties",
         "Prefix",

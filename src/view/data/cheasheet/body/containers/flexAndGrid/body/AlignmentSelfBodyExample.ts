@@ -15,7 +15,7 @@ const ClassNameExample = (className: string) =>
 `);
 
 const AlignmentSelfBodyExample = (classNames: string[]) => `
-    <div class="d_grid align-items_center cols_2 gap_4">
+    <div class="d_grid place-items_stretch cols_2 gap_4">
         ${classNames.map(ClassNameExample).join(" ")}
     </div>
 `;

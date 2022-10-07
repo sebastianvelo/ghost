@@ -3,7 +3,7 @@ import * as Sections from "./body/CheatsheetBodyData";
 
 const CheatsheetData: CheatsheetTableProps = {
     sections: [
-        Sections.BasicsSection,
+        Sections.GeneralSection,
         Sections.SpacingSection,
         Sections.LayoutFlexAndGridSection,
         Sections.BorderAndOutlineSection,

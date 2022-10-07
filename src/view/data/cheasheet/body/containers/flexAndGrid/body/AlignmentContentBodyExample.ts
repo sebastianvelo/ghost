@@ -11,7 +11,7 @@ const ClassNameExample = (className: string, size = 9) => GenericClassNameExampl
 `);
 
 const AlignmentContentBodyExample = (examples: [className: string, size?: number][]) => `
-    <div class="d_grid align-items_center cols_3">
+    <div class="d_grid place-items_stretch cols_3">
         ${examples.map(([className, size]) => ClassNameExample(className, size)).join(" ")}
     </div>
 `;
