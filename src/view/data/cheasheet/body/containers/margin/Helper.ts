@@ -1,6 +1,7 @@
 import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
+import getExamples from "../../common/getExamples";
 import IntegerUnitDefaultPxTransformer from "../../common/IntegerUnitDefaultPxTransformer";
 import MarginBodyExample from "./body/BodyExample";
 
@@ -13,5 +14,5 @@ export const GenericMargin = (properties: PropertyCSS[], prefix: GhostPrefix, fu
         possibleSuffixes: ["numberUnit"],
         example: { suffix: suffixesExamples[2], transformer: IntegerUnitDefaultPxTransformer }
     },
-    body: MarginBodyExample(suffixesExamples.map(suffix => `${prefix}_${suffix}`), fullRowExample)
+    body: MarginBodyExample(getExamples(prefix, suffixesExamples), fullRowExample)
 });

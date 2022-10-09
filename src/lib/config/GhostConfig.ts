@@ -1,6 +1,6 @@
 import { ColorCustomizationConfig } from "./CustomColors";
 
-export type Source = "document" | "files" | "mock";
+export type Source = "document" | "files";
 export type Output = "document" | "file";
 
 interface GhostConfig {

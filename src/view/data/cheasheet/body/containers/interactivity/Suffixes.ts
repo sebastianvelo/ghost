@@ -2,3 +2,4 @@ export const CursorSuffixes = ["alias", "all-scroll", "auto", "cell", "col-resiz
 export const PointerEventSuffixes = ["none", "auto"];
 export const ScrollBehaviorSuffixes = ["smooth", "auto"];
 export const ResizeSuffixes = ["both", "horizontal", "vertical", "none"];
+export const UserSelectSuffixes = ["none", "text", "all", "auto"];

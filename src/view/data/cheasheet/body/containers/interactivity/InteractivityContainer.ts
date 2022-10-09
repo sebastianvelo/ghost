@@ -3,7 +3,7 @@ import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import UtilityColorSuffix from "../../common/helpers/UtilityColorSuffix";
-import { CursorSuffixes, PointerEventSuffixes, ResizeSuffixes, ScrollBehaviorSuffixes } from "./Suffixes";
+import { CursorSuffixes, PointerEventSuffixes, ResizeSuffixes, ScrollBehaviorSuffixes, UserSelectSuffixes } from "./Suffixes";
 
 const Cursor: RowProps = {
     header: {
@@ -41,6 +41,15 @@ const Resize: RowProps = {
     },
 };
 
+const UserSelect: RowProps = {
+    header: {
+        cssProperties: [PropertyCSS.USER_SELECT],
+        prefix: GhostPrefix.USER_SELECT,
+        possibleSuffixes: UserSelectSuffixes,
+        example: { suffix: "none" }
+    },
+};
+
 const CaretColor: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.CARET_COLOR, GhostPrefix.CARET_COLOR, "10af0a"),
 };
@@ -58,6 +67,7 @@ const InteractivityContainer: RowsContainersProps = {
         PointerEvents,
         CaretColor,
         AccentColor,
+        UserSelect,
     ]
 };
 

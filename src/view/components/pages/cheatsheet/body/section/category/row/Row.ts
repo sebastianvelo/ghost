@@ -31,10 +31,10 @@ const Value = (val: string) => val.split(" ").map(value => valueIsItInteger(valu
 const Property = (property: PropertyCSS) =>
     /*`<a class="txt_91-203-254 decoration_none" href="${`https://www.w3schools.com/cssref/css3_pr_${property}.asp`}">     */
     `<a class="txt_91-203-254 decoration_none">    
-        ${property}
+        ${property.trimEnd()}
     </a>
 `;
-const Declaration = (property: PropertyCSS, value: string) => `${Property(property)}: ${Value(value)};</span>`;
+const Declaration = (property: PropertyCSS, value: string) => `<span>${Property(property)}: ${Value(value)};</span>`;
 
 const Selector = (selector: string) => `<span class="txt_215-168-60 txt-weight_bold">${selector}</span>`;
 

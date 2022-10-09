@@ -28,6 +28,10 @@ const InteractivityUtilities: IUtilities = {
         prefix: GhostPrefix.RESIZE,
         property: PropertyCSS.RESIZE
     }),
+    ...SimpleUtility({
+        prefix: GhostPrefix.USER_SELECT,
+        property: PropertyCSS.USER_SELECT
+    }),
 };
 
 export default InteractivityUtilities;

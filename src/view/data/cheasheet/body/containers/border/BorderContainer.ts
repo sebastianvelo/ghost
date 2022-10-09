@@ -2,6 +2,7 @@ import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
+import getExamples from "../../common/getExamples";
 import BorderBodyExample from "./BodyExample";
 import { GenericBorder } from "./Helper";
 
@@ -54,9 +55,7 @@ const BorderRadius: RowProps = {
         possibleSuffixes: ["length"],
         example: { suffix: "25%" }
     },
-    body: BorderBodyExample(
-        ["25%", "50%", "1rem"].map(suffix => `${GhostPrefix.BORDER_RADIUS}_${suffix}`)
-    )
+    body: BorderBodyExample(getExamples(GhostPrefix.BORDER_RADIUS, ["25%", "50%", "1rem"]))
 };
 
 const BorderContainer: RowsContainersProps = {

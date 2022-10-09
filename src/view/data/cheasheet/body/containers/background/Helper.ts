@@ -1,13 +1,13 @@
 import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
-import ClassNameTransformer from "../../../../../../lib/utility/common/transformers/ClassNameTransformer";
+import SuffixTransformer from "../../../../../../lib/utility/types/SuffixTransformer";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 
 interface GenericBackgroundProps {
     property: PropertyCSS;
     prefix: GhostPrefix;
     suffixes: string[];
-    transformer?: ClassNameTransformer;
+    transformer?: SuffixTransformer;
 }
 
 export const GenericBackground = (props: GenericBackgroundProps): RowProps => ({

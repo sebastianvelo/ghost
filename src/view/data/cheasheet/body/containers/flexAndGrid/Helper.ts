@@ -1,18 +1,18 @@
 import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
-import ClassNameTransformer from "../../../../../../lib/utility/common/transformers/ClassNameTransformer";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import GridTemplateBodyExample from "../grid/body/GridTemplateBodyExample";
 import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuffix";
 import AlignmentContentBodyExample from "./body/AlignmentContentBodyExample";
 import AlignmentItemsBodyExample from "./body/AlignmentItemsBodyExample";
 import AlignmentSelfBodyExample from "./body/AlignmentSelfBodyExample";
+import SuffixTransformer from "../../../../../../lib/utility/types/SuffixTransformer";
 
 interface AlignmentContainerProps {
     property: PropertyCSS;
     prefix: GhostPrefix;
     suffixes: string[];
-    transformer?: ClassNameTransformer;
+    transformer?: SuffixTransformer;
 }
 
 export const GenericAlignmentContentContainer = (props: AlignmentContainerProps): RowProps => ({

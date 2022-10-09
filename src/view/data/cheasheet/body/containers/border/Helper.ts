@@ -1,7 +1,8 @@
+import { BorderTransformer } from "../../../../../../lib/app/utilities/border/transformers";
 import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
-import { BorderTransformer } from "../../../../../../lib/app/utilities/border/transformers";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
+import getExamples from "../../common/getExamples";
 import BorderBodyExample from "./BodyExample";
 
 interface GenericBorderProps {
@@ -17,5 +18,5 @@ export const GenericBorder = (props: GenericBorderProps): RowProps => ({
         possibleSuffixes: ["width-color?-style?"],
         example: { suffix: props.examples[0], transformer: BorderTransformer }
     },
-    body: BorderBodyExample(props.examples.map(suffix => `${props.prefix}_${suffix}`))
+    body: BorderBodyExample(getExamples(props.prefix, props.examples))
 });

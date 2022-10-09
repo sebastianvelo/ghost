@@ -1,19 +1,20 @@
+import { BackgroundPositioningTransformer, BackgroundRepeatTransformer } from "../../../../../../lib/app/utilities/background/transformers";
+import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/app/utilities/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import GenericBodyExample from "../../common/body/GenericBodyExample";
+import getExamples from "../../common/getExamples";
 import UtilityColorSuffix from "../../common/helpers/UtilityColorSuffix";
 import { GenericBackground } from "./Helper";
 import { BackgroundAttachmentSuffixes, BackgroundBlendModeSuffixes, BackgroundPositioningSuffixes, BackgroundPositionSuffixes, BackgroundRepeatSuffixes } from "./Suffixes";
-import { BackgroundPositioningTransformer, BackgroundRepeatTransformer } from "../../../../../../lib/app/utilities/background/transformers";
-import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/app/utilities/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 
 const BackgroundColor: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.BG_COLOR, GhostPrefix.BG_COLOR, "200-10-102-50"),
     body: GenericBodyExample({
-        classNames: ["bg_0-40-200", "bg_0-40-200-50", "bg_92AFDA", "bg_tomato"],
         aditionalClassName: "w_150 h_150",
+        classNames: getExamples(GhostPrefix.BG_COLOR, ["0-40-200", "0-40-200-50", "92AFDA", "tomato"]),
     })
 };
 

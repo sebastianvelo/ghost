@@ -11,6 +11,7 @@ import OutlineUtilities from "./outline/OutlineUtilities";
 import PaddingUtilities from "./padding/PaddingUtilities";
 import SizingUtilities from "./sizing/SizingUtilities";
 import SpaceUtilities from "./space/SpaceUtilities";
+import TransformUtilities from "./transform/TransformUtilities";
 import TransitionUtilities from "./transition/TransitionUtilities";
 import TypographyUtilities from "./typography/TypographyUtilities";
 
@@ -33,6 +34,7 @@ const utilities: IUtilities = {
     ...FlexAndGridUtilities,
     ...TransitionUtilities,
     ...InteractivityUtilities,
+    ...TransformUtilities,
 };
 
 export default utilities;

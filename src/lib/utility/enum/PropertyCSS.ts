@@ -7,12 +7,15 @@ enum PropertyCSS {
   POINTER_EVENTS = "pointer-events",
   SCROLL_BEHAVIOR = "scroll-behavior",
   RESIZE = "resize",
+  USER_SELECT = "user-select",
 
   TRANSITION = "transition",
   TRANSITION_DELAY = "transition-delay",
   TRANSITION_DURATION = "transition-duration",
   TRANSITION_PROPERTY = "transition-property",
   TRANSITION_TIMING_FUNCTION = "transition-timing-function",
+
+  TRANSFORM = "transform",
 
   BG_COLOR = "background-color",
   BG_ATTACHMENT = "background-attachment",
