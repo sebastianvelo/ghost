@@ -1,15 +1,15 @@
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneDeclarationUtility from "../../common/OneDeclarationUtility";
+import SimpleUtility from "../../common/SimpleUtility";
 import { BorderTransformer } from "./transformers";
 
 const BorderUtilities: Utilities = {
-    ...OneDeclarationUtility(GhostPrefix.BORDER, PropertyCSS.BORDER, BorderTransformer),
-    ...OneDeclarationUtility(GhostPrefix.BORDER_BOTTOM, PropertyCSS.BORDER_BOTTOM, BorderTransformer),
-    ...OneDeclarationUtility(GhostPrefix.BORDER_TOP, PropertyCSS.BORDER_TOP, BorderTransformer),
-    ...OneDeclarationUtility(GhostPrefix.BORDER_RIGHT, PropertyCSS.BORDER_RIGHT, BorderTransformer),
-    ...OneDeclarationUtility(GhostPrefix.BORDER_LEFT, PropertyCSS.BORDER_LEFT, BorderTransformer),
+    ...SimpleUtility(GhostPrefix.BORDER, PropertyCSS.BORDER, BorderTransformer),
+    ...SimpleUtility(GhostPrefix.BORDER_BOTTOM, PropertyCSS.BORDER_BOTTOM, BorderTransformer),
+    ...SimpleUtility(GhostPrefix.BORDER_TOP, PropertyCSS.BORDER_TOP, BorderTransformer),
+    ...SimpleUtility(GhostPrefix.BORDER_RIGHT, PropertyCSS.BORDER_RIGHT, BorderTransformer),
+    ...SimpleUtility(GhostPrefix.BORDER_LEFT, PropertyCSS.BORDER_LEFT, BorderTransformer),
     [GhostPrefix.BORDER_X]: {
         declarations: [
             { property: PropertyCSS.BORDER_LEFT, transformer: BorderTransformer },
@@ -22,7 +22,7 @@ const BorderUtilities: Utilities = {
             { property: PropertyCSS.BORDER_BOTTOM, transformer: BorderTransformer }
         ],
     },
-    ...OneDeclarationUtility(GhostPrefix.BORDER_RADIUS, PropertyCSS.BORDER_RADIUS),
+    ...SimpleUtility(GhostPrefix.BORDER_RADIUS, PropertyCSS.BORDER_RADIUS),
 };
 
 export default BorderUtilities;

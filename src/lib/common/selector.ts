@@ -29,10 +29,10 @@ const getSelector = (prefix: PrefixClassName, options: [string, string, string])
 const scapePrefix = (prefix: PrefixClassName) => ["%", "."]
     .reduce((acc, val) => acc.replace(val, `\\${val}`), prefix);
 
-export const getFullSelector = (prefix: PrefixClassName, options: [string, string, string]): string => {
-    const [property] = prefix.split(PropertySeparator);
+export const getFullSelector = (prefixSuffix: PrefixClassName, options: [string, string, string]): string => {
+    const [property] = prefixSuffix.split(PropertySeparator);
     const utility = Utilities[property];
-    const scapedPrefix = scapePrefix(prefix);
+    const scapedPrefix = scapePrefix(prefixSuffix);
     const selector = getSelector(scapedPrefix, options);
     return utility && utility.selector ? utility.selector(selector) : selector;
 }

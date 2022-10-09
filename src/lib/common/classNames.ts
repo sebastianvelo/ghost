@@ -10,8 +10,8 @@ const flatClasses = (e: Element) => e.className.split(" ");
 const getUniquesClassesFromDocument = (): string[] => getAllClassesFromDocument().flatMap(flatClasses);
 
 const sources: any = {
-    "onload": getUniquesClassesFromDocument,
+    "document": getUniquesClassesFromDocument,
 };
 
-export const getGhostClassNames = (type: string) =>
-    filterInvalidClasses(sources[type] ? sources[type]() : []).sort() as GhostClassName[];
+export const getGhostClassNames = (type?: string) =>
+    filterInvalidClasses(type && sources[type] ? sources[type]() : []).sort() as GhostClassName[];

@@ -1,12 +1,14 @@
 import { ColorCustomizationConfig } from "./CustomColors";
 
-type Source = "onload";
+export type Source = "document" | "files" | "mock";
+export type Output = "document" | "file";
 
 interface GhostConfig {
-    source: Source;
-    aliases?: {
-        colors?: ColorCustomizationConfig,
-    }
+  source?: Source;
+  output?: Output;
+  aliases?: {
+    colors?: ColorCustomizationConfig,
+  }
 }
 
 export default GhostConfig;

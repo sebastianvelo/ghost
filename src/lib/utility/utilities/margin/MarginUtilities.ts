@@ -1,14 +1,14 @@
 import GhostPrefix from "../../GhostPrefix";
 import PropertyCSS from "../../PropertyCSS";
 import Utilities from "../../common/IUtilities";
-import OneDeclarationUtility from "../../common/OneDeclarationUtility";
+import SimpleUtility from "../../common/SimpleUtility";
 
 const MarginUtilities: Utilities = {
-    ...OneDeclarationUtility(GhostPrefix.MARGIN, PropertyCSS.MARGIN),
-    ...OneDeclarationUtility(GhostPrefix.MARGIN_RIGHT, PropertyCSS.MARGIN_RIGHT),
-    ...OneDeclarationUtility(GhostPrefix.MARGIN_LEFT, PropertyCSS.MARGIN_LEFT),
-    ...OneDeclarationUtility(GhostPrefix.MARGIN_BOTTOM, PropertyCSS.MARGIN_BOTTOM),
-    ...OneDeclarationUtility(GhostPrefix.MARGIN_TOP, PropertyCSS.MARGIN_TOP),
+    ...SimpleUtility(GhostPrefix.MARGIN, PropertyCSS.MARGIN),
+    ...SimpleUtility(GhostPrefix.MARGIN_RIGHT, PropertyCSS.MARGIN_RIGHT),
+    ...SimpleUtility(GhostPrefix.MARGIN_LEFT, PropertyCSS.MARGIN_LEFT),
+    ...SimpleUtility(GhostPrefix.MARGIN_BOTTOM, PropertyCSS.MARGIN_BOTTOM),
+    ...SimpleUtility(GhostPrefix.MARGIN_TOP, PropertyCSS.MARGIN_TOP),
     [GhostPrefix.MARGIN_X]: {
         declarations: [{ property: PropertyCSS.MARGIN_RIGHT }, { property: PropertyCSS.MARGIN_LEFT }]
     },

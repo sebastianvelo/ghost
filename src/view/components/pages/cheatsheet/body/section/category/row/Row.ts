@@ -71,7 +71,7 @@ const Row = (props: RowProps, idx: number) => `
         ${props.body ? `
             <div class="p_12 bg_255-255-255-50">
                 ${props.body}
-            </div>
+            </div>ll
         ` : ""}
     </details>`;
 

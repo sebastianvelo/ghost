@@ -9,9 +9,9 @@ const getDeclarations = (prefix: PrefixClassName, important?: boolean): Declarat
     const [property, value] = prefix.split(PropertySeparator);
     const utility = Utilities[property];
     if (!utility) return null;
-    return utility.declarations.map(utility => {
-        const val = utility.transformer ? utility.transformer(value) : value;
-        return important ? [utility.property, val, "important"] : [utility.property, val];
+    return utility.declarations.map(declaration => {
+        const val = declaration.transformer ? declaration.transformer(value) : value;
+        return important ? [declaration.property, val, "important"] : [declaration.property, val];
     });
 };
 
