@@ -1,6 +1,5 @@
-import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
+import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import GridSpanStartEndBodyExample from "./body/GridSpanStartEndBodyExample";
@@ -8,7 +7,8 @@ import { GenericGridAuto } from "./Helper";
 import UtilityIntegerSuffix from "../../common/helpers/UtilityIntegerSuffix";
 import { GridFlowSuffixes } from "./Suffixes";
 import GridTemplateBodyExample from "./body/GridTemplateBodyExample";
-import { GridSpanTransformer, GridTemplateTransformer } from "../../../../../../lib/utility/utilities/grid/transformers";
+import { GridSpanTransformer, GridTemplateTransformer } from "../../../../../../lib/app/utilities/grid/transformers";
+import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/app/utilities/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 
 const GridTemplateColumns: RowProps = {
     header: {

@@ -1,6 +1,6 @@
-import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { FlexBasisTransformer, FlexDirectionTransformer } from "../../../../../../lib/utility/utilities/flex/transformers";
+import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
+import { FlexBasisTransformer, FlexDirectionTransformer } from "../../../../../../lib/app/utilities/flex/transformers";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import { FlexBasisSuffixes, FlexDirectionSuffixes, FlexGrowSuffixes, FlexShrinkSuffixes, FlexWrapSuffixes } from "./Suffixes";

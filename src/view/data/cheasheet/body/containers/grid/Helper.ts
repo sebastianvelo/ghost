@@ -1,6 +1,6 @@
-import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { GridAutoTransformer } from "../../../../../../lib/utility/utilities/grid/transformers";
+import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
+import { GridAutoTransformer } from "../../../../../../lib/app/utilities/grid/transformers";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { GridAutoSuffixes } from "./Suffixes";
 

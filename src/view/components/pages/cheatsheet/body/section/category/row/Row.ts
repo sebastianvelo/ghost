@@ -1,7 +1,7 @@
-import { PropertySeparator, SuffixSeparator } from "../../../../../../../../lib/common/types";
-import GhostPrefix from "../../../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../../../lib/utility/PropertyCSS";
-import ClassNameTransformer from "../../../../../../../../lib/utility/common/transformers/ClassNameTransformer";
+import { PrefixSuffixSeparator, SuffixSeparator } from "../../../../../../../../lib/common/types/Separators";
+import GhostPrefix from "../../../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../../../lib/utility/enum/PropertyCSS";
+import SuffixTransformer from "../../../../../../../../lib/utility/types/SuffixTransformer";
 
 export interface RowHeaderProps {
     cssProperties: PropertyCSS[];
@@ -9,7 +9,7 @@ export interface RowHeaderProps {
     possibleSuffixes: string[];
     example: {
         suffix: string;
-        transformer?: ClassNameTransformer;
+        transformer?: SuffixTransformer;
     },
     extendsSelector?: string;
 }
@@ -49,7 +49,7 @@ const Prefix = (prefix: string) => Selector(prefix);
 const Suffixes = (possibleSuffixes: string[]) => `{ ${possibleSuffixes.map(Suffix).join(" | ")} }`;
 
 const Example = (props: RowHeaderProps) => {
-    const selector = `.${props.prefix}${PropertySeparator}${props.example.suffix} ${props.extendsSelector ?? ""}`;
+    const selector = `.${props.prefix}${PrefixSuffixSeparator}${props.example.suffix} ${props.extendsSelector ?? ""}`;
     const value = props.example.transformer ? props.example.transformer(props.example.suffix) : props.example.suffix;
     const Declarations = props.cssProperties.map(property => Declaration(property, value)).join(" ");
     return `${Selector(selector)} { ${Declarations} }`;

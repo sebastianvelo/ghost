@@ -1,7 +1,6 @@
-import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/utility/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import { LetterSpacingTransformer, LineHeightTransformer, TextShadowTransformer } from "../../../../../../lib/utility/utilities/typography/transformers";
+import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
+import { LetterSpacingTransformer, LineHeightTransformer, TextShadowTransformer } from "../../../../../../lib/app/utilities/typography/transformers";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import { RowsContainersProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/RowsContainer";
 import UtilityColorSuffix from "../../common/helpers/UtilityColorSuffix";
@@ -9,6 +8,7 @@ import UtilityIntegerUnitSuffix from "../../common/helpers/UtilityIntegerUnitSuf
 import IntegerUnitDefaultPxTransformer from "../../common/IntegerUnitDefaultPxTransformer";
 import { TextBodyExample, TextDecorationBodyExample, TextOverflowBodyExample } from "./Helper";
 import { FontStyleSuffixes, FontVariantCapsSuffixes, FontVariantSuffixes, FontWeightSuffixes, LetterSpacingSuffixes, LineHeightSuffixes, ListStyleTypeSuffixes, TextDecorationLineSuffixes, TextDecorationStyleSuffixes, TextOverflowSuffixes } from "./Suffixes";
+import ReplaceSeparatorWithSpaceTransformer from "../../../../../../lib/app/utilities/common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 
 const Color: RowProps = {
     ...UtilityColorSuffix(PropertyCSS.COLOR, GhostPrefix.COLOR, "10af0a"),

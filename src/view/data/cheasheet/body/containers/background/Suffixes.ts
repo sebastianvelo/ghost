@@ -1,4 +1,4 @@
-import { BackgroundPositioningMap, BackgroundRepeatMap } from "../../../../../../lib/utility/utilities/background/suffixes";
+import { BackgroundPositioningMap, BackgroundRepeatMap } from "../../../../../../lib/app/utilities/background/suffixes";
 
 export const BackgroundPositioningSuffixes = Object.keys(BackgroundPositioningMap);
 export const BackgroundRepeatSuffixes = Object.keys(BackgroundRepeatMap);

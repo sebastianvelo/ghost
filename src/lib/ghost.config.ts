@@ -2,6 +2,7 @@ import GhostConfig from "./config/GhostConfig";
 
 const config: GhostConfig = {
     source: "document",
+    output: "document",
     aliases: {
         colors: {
             primary: "FCCA46",

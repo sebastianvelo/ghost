@@ -1,6 +1,6 @@
-import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
-import ColorTransformer from "../../../../../../lib/utility/common/transformers/color/ColorTransformer";
+import ColorTransformer from "../../../../../../lib/app/utilities/common/transformers/color/ColorTransformer";
+import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 
 const UtilityColorSuffix =

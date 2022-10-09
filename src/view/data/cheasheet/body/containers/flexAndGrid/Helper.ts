@@ -1,5 +1,5 @@
-import GhostPrefix from "../../../../../../lib/utility/GhostPrefix";
-import PropertyCSS from "../../../../../../lib/utility/PropertyCSS";
+import GhostPrefix from "../../../../../../lib/utility/enum/GhostPrefix";
+import PropertyCSS from "../../../../../../lib/utility/enum/PropertyCSS";
 import ClassNameTransformer from "../../../../../../lib/utility/common/transformers/ClassNameTransformer";
 import { RowProps } from "../../../../../components/pages/cheatsheet/body/section/category/row/Row";
 import GridTemplateBodyExample from "../grid/body/GridTemplateBodyExample";
