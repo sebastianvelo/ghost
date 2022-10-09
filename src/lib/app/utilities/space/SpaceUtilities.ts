@@ -1,8 +1,7 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 
-const SpaceUtilities: IUtilities = {
+const SpaceUtilities = {
     [GhostPrefix.SPACE_X]: {
         declarations: [{ property: PropertyCSS.MARGIN_LEFT }],
         selector: (className: string) => `${className} > * + *`

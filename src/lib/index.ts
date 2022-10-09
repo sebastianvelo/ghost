@@ -1,8 +1,8 @@
 import GhostConfig from "./config/GhostConfig";
 import getGhostClassNames from "./app/getGhostClassNames/getGhostClassNames";
 import setStyleSheet from "./app/setStyleSheet/setStyleSheet";
-import getStyleSheet from "./app/getStyleSheet/getStyleSheet";
 import initializeConfig from "./config/initializeConfig";
+import getStyleSheet from "./app/getStyleSheet/getStyleSheet";
 
 const timerCalculator = () => {
   const startTime = performance.now();
@@ -20,7 +20,7 @@ const initGhost = (config: GhostConfig) => {
   const timer = timerCalculator();
   initializeConfig(config);
   const classNames = getGhostClassNames(config.source);
-  const styleSheet = getStyleSheet(classNames).innerHTML;
+  getStyleSheet(classNames);
   timer.logTotal(classNames);
   setStyleSheet(config.output);
 };

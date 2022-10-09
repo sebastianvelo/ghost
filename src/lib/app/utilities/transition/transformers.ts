@@ -1,6 +1,8 @@
 import { SuffixSeparator } from "../../../common/types/Separators";
 import { TransitionPropertyMap, TransitionTimingFunctionMap } from "./suffixes";
 
+export const TransitionMsTransformer = (suffix: string) => `${suffix}ms`;
+
 export const TransitionTransformer = (suffix: string) => {
     const [property, duration = "150", ...timingFunction] = suffix.split(SuffixSeparator);
     return `${property} ${TransitionMsTransformer(duration)} ${timingFunction?.join("-") ?? "ease-linear"}`;
@@ -17,4 +19,3 @@ export const TransitionTimingFunctionTransformer = (suffix: string) => {
     return `cubic-bezier(${CubicBezierValues(x1, y1, x2, y2)})`;
 }
 
-export const TransitionMsTransformer = (suffix: string) => `${suffix}ms`;

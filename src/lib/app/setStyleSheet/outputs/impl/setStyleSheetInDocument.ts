@@ -1,7 +1,7 @@
 import SetStyleSheetInOutput from "../SetStyleSheetInOutput";
 
 const setStyleSheetInDocument: SetStyleSheetInOutput = (style: HTMLStyleElement) => {
-    return [];
+    console.log(style);
 };
 
 export default setStyleSheetInDocument;

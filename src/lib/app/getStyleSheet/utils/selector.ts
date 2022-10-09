@@ -14,8 +14,8 @@ const getPseudoClass = (pseudoClass: string) => PseudoClassMap[pseudoClass] ?? p
 const getSelectors = (options: [string?, string?, string?]) => {
     const [pseudoClass = "", breakpoint = "", theme = ""] = options;
     const themeParentSelector = theme ? `.${theme}` : "";
-    const breakpointSelector = breakpoint ? `\\\:\\\:${breakpoint}` : "";
-    const pseudoClassSelector = pseudoClass ? `\\\:${pseudoClass}:${getPseudoClass(pseudoClass)}` : "";
+    const breakpointSelector = breakpoint ? `\\:\\:${breakpoint}` : "";
+    const pseudoClassSelector = pseudoClass ? `\\:${pseudoClass}:${getPseudoClass(pseudoClass)}` : "";
     return [pseudoClassSelector, breakpointSelector, themeParentSelector];
 }
 

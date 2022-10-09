@@ -1,6 +1,6 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
+import IUtilities from "../IUtilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import { FlexBasisTransformer, FlexDirectionTransformer } from "./transformers";
 

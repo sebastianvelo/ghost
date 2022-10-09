@@ -1,9 +1,8 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 
-const TransformUtilities: IUtilities = {
+const TransformUtilities = {
     ...SimpleUtility({ prefix: GhostPrefix.MATRIX, property: PropertyCSS.TRANSFORM }),
     ...SimpleUtility({ prefix: GhostPrefix.MATRIX_3D, property: PropertyCSS.TRANSFORM }),
     ...SimpleUtility({ prefix: GhostPrefix.TRANSLATE, property: PropertyCSS.TRANSFORM }),

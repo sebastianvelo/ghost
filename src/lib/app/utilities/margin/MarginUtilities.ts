@@ -1,9 +1,8 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 
-const MarginUtilities: IUtilities = {
+const MarginUtilities = {
     ...SimpleUtility({ prefix: GhostPrefix.MARGIN, property: PropertyCSS.MARGIN }),
     ...SimpleUtility({ prefix: GhostPrefix.MARGIN_RIGHT, property: PropertyCSS.MARGIN_RIGHT }),
     ...SimpleUtility({ prefix: GhostPrefix.MARGIN_LEFT, property: PropertyCSS.MARGIN_LEFT }),

@@ -1,11 +1,10 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import { OutlineTransformer, OutlineWidthTransformer } from "./transformers";
 import ColorTransformer from "../common/transformers/color/ColorTransformer";
 
-const OutlineUtilities: IUtilities = {
+const OutlineUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.OUTLINE,
         property: PropertyCSS.OUTLINE,

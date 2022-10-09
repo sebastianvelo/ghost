@@ -1,9 +1,8 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 
-const PaddingUtilities: IUtilities = {
+const PaddingUtilities = {
     ...SimpleUtility({ prefix: GhostPrefix.PADDING, property: PropertyCSS.PADDING }),
     ...SimpleUtility({ prefix: GhostPrefix.PADDING_RIGHT, property: PropertyCSS.PADDING_RIGHT }),
     ...SimpleUtility({ prefix: GhostPrefix.PADDING_LEFT, property: PropertyCSS.PADDING_LEFT }),

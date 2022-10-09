@@ -1,4 +1,3 @@
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
@@ -6,7 +5,7 @@ import { LetterSpacingTransformer, LineHeightTransformer, TextDecorationThicknes
 import ColorTransformer from "../common/transformers/color/ColorTransformer";
 import ReplaceSeparatorWithSpaceTransformer from "../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 
-const TypographyUtilities: IUtilities = {
+const TypographyUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.COLOR,
         property: PropertyCSS.COLOR,

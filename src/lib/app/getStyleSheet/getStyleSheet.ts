@@ -18,14 +18,13 @@ const getSelectorAndDeclarationsFromGhostClassName = (className: string) => {
     }
 };
 
-const getStyleSheet = (classNames: string[]) => {
+const getStyleSheet = (classNames: string[]): void => {
     const element = document.createElement("style");
     document.head.append(element);
 
     classNames.map(getSelectorAndDeclarationsFromGhostClassName).forEach(utility => {
         insertRuleAndDeclarationBlock(utility.selector, utility.declarations, element)
     });
-    return element;
 };
 
 export default getStyleSheet;

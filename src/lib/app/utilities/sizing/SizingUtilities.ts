@@ -1,9 +1,8 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 
-const SizingUtilities: IUtilities = {
+const SizingUtilities = {
     ...SimpleUtility({ prefix: GhostPrefix.WIDTH, property: PropertyCSS.WIDTH }),
     ...SimpleUtility({ prefix: GhostPrefix.HEIGHT, property: PropertyCSS.HEIGHT }),
     ...SimpleUtility({ prefix: GhostPrefix.MIN_WIDTH, property: PropertyCSS.MIN_WIDTH }),

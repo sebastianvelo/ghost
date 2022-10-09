@@ -1,7 +1,5 @@
 import GetClassNamesFromSource from "../GetClassNamesFromSource";
 
-const getGhostClassNamesFromFiles: GetClassNamesFromSource = () => {
-    return [];
-};
+const getGhostClassNamesFromFiles: GetClassNamesFromSource = () => [];
 
 export default getGhostClassNamesFromFiles;

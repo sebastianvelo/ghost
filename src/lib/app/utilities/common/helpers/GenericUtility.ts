@@ -1,7 +1,6 @@
 import GhostPrefix from "../../../../utility/enum/GhostPrefix";
 import GhostDeclaration from "../../../../utility/GhostDeclaration";
 import SelectorTransformer from "../../../../utility/types/SelectorTransformer";
-import { IUtilities } from "../../Utilities";
 
 export interface IGenericUtility {
     prefix: GhostPrefix;
@@ -9,7 +8,7 @@ export interface IGenericUtility {
     declarations: GhostDeclaration[];
 }
 
-const GenericUtility = (data: IGenericUtility): IUtilities => ({
+const GenericUtility = (data: IGenericUtility) => ({
     [data.prefix]: { ...data }
 });
 

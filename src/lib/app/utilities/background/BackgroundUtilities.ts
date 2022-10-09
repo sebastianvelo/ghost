@@ -3,7 +3,7 @@ import PropertyCSS from "../../../utility/enum/PropertyCSS";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import ColorTransformer from "../common/transformers/color/ColorTransformer";
 import ReplaceSeparatorWithSpaceTransformer from "../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
-import { IUtilities } from "../Utilities";
+import IUtilities from "../IUtilities";
 import { BackgroundPositioningTransformer, BackgroundRepeatTransformer } from "./transformers";
 
 const BackgroundUtilities: IUtilities = {

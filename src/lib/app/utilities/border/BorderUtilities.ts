@@ -1,10 +1,9 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import { BorderTransformer } from "./transformers";
 
-const BorderUtilities: IUtilities = {
+const BorderUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.BORDER,
         property: PropertyCSS.BORDER,

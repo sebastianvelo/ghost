@@ -1,4 +1,3 @@
-import Utility from "../../utility/Utility";
 import BackgroundUtilities from "./background/BackgroundUtilities";
 import BorderUtilities from "./border/BorderUtilities";
 import FlexUtilities from "./flex/FlexUtilities";
@@ -15,11 +14,7 @@ import TransformUtilities from "./transform/TransformUtilities";
 import TransitionUtilities from "./transition/TransitionUtilities";
 import TypographyUtilities from "./typography/TypographyUtilities";
 
-export interface IUtilities {
-    [prefix: string]: Utility;
-}
-
-const utilities: IUtilities = {
+const utilities: any /* TODO arreglar esto */ = {
     ...BackgroundUtilities,
     ...TypographyUtilities,
     ...PaddingUtilities,

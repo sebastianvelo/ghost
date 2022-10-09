@@ -1,11 +1,10 @@
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import { GridTemplateTransformer, GridSpanTransformer, GridAutoTransformer } from "./transformers";
 import ReplaceSeparatorWithSpaceTransformer from "../common/transformers/common/ReplaceSeparatorWithSpaceTransformer";
 
-const GridUtilities: IUtilities = {
+const GridUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.GRID_TEMPLATE_COLUMNS,
         property: PropertyCSS.GRID_TEMPLATE_COLUMNS,

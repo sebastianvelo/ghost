@@ -13,4 +13,4 @@ export const OrderTransformer = (suffix: string) => {
     return suffix;
 }
 
-export const GridGapTransformer = (suffix: string) => isNaN(+suffix) ? suffix : `${suffix}px`;
+export const GridGapTransformer = (suffix: string) => Number.isNaN(+suffix) ? suffix : `${suffix}px`;

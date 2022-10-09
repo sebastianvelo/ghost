@@ -18,6 +18,6 @@ export const insertRuleAndDeclarationBlock = (selector: string, declarations: De
   declarations.forEach(({ property, value, isImportant }) =>
     rule.style.setProperty(property, value, getPriority(isImportant))
   );
-  element.innerHTML += `${rule.cssText}\n`;
+  element.innerHTML += `${rule.cssText}\n`; // eslint-disable-line no-param-reassign
 };
 

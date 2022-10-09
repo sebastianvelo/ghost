@@ -1,7 +1,7 @@
 import GhostPrefix from "../../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../../utility/enum/PropertyCSS";
 import SuffixTransformer from "../../../../utility/types/SuffixTransformer";
-import { IUtilities } from "../../Utilities";
+import IUtilities from "../../IUtilities";
 
 export interface ISimpleUtility {
     prefix: GhostPrefix;

@@ -16,7 +16,7 @@ const ColorTransformer: SuffixTransformer = (suffix: string) => {
     const [value] = splitted;
     const realValue = getValue(value) ?? value;
     const hexa = parseInt(realValue, 16);
-    if (!isNaN(hexa) && (realValue.length === 6 || realValue.length === 3)) return `#${realValue}`;
+    if (!Number.isNaN(hexa) && (realValue.length === 6 || realValue.length === 3)) return `#${realValue}`;
     return realValue;
   }
   return getRGBA(splitted);

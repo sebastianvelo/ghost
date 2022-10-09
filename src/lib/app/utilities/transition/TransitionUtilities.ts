@@ -1,10 +1,9 @@
-import { IUtilities } from "../Utilities";
 import SimpleUtility from "../common/helpers/SimpleUtility";
 import GhostPrefix from "../../../utility/enum/GhostPrefix";
 import PropertyCSS from "../../../utility/enum/PropertyCSS";
 import { TransitionMsTransformer, TransitionPropertyTransformer, TransitionTimingFunctionTransformer, TransitionTransformer } from "./transformers";
 
-const TransitionUtilities: IUtilities = {
+const TransitionUtilities = {
     ...SimpleUtility({
         prefix: GhostPrefix.TRANSITION,
         property: PropertyCSS.TRANSITION,
